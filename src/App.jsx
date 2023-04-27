@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom'
-import Donacije from './components/Donacije'
-import Obavijesti from './components/Obavijesti'
-import OpciPodaci from './components/OpciPodaci'
-import Popis from './components/Popis'
-import Unos from './components/Unos'
+import Donacije from './pages/Donacije'
+import Obavijesti from './pages/Obavijesti'
+import OpciPodaci from './pages/OpciPodaci'
+import Popis from './pages/Popis'
+import Unos from './pages/Unos'
 
 
 function App() {
@@ -15,21 +15,11 @@ function App() {
     <>
     <nav>
       <ul>
-        <li>
-          <Link to="/" >Opci podaci</Link>
-        </li>
-        <li>
-        <Link to="/obavijesti" >Obavijesti</Link>
-        </li>
-        <li>
-        <Link to="/donacije" >Donacije</Link>
-        </li>
-        <li>
-        <Link to="/popis" >Popis</Link>
-        </li>
-        <li>
-        <Link to="/unos" >Unos</Link>
-        </li>
+        <Link to="/" className='nav-link' >Opci podaci</Link>
+        <Link to="/obavijesti" className='nav-link'>Obavijesti</Link>
+        <Link to="/donacije" className='nav-link' >Donacije</Link>
+        <Link to="/popis" className='nav-link' >Popis</Link>
+        <Link to="/unos" className='nav-link' >Unos</Link>
       </ul>
     </nav>
     <Routes>
