@@ -18,7 +18,7 @@ function Naslov() {
       <div className='naslovBox'>
         <div className='naslov'>
           <div className='tekstNasova'>
-            <p>Azil za životinje</p>
+            <p>Azil za životinje Šapa</p>
           </div>
           <div className='adminBox'>
             <p>{checked ? 'ADMIN' : 'KORISNIK'} </p>
