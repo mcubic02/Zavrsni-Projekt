@@ -1,0 +1,51 @@
+.kontaktForma {
+        border-radius: 1.5em;
+        height: 500px;
+        width: 700px;
+        border-color: brown;
+        border-style: solid;
+        background-color: rgba(143, 132, 132, 0.396);
+        margin-top: 30px;
+        padding-top: 30px;
+        text-align: left;
+        padding-bottom: 20px;
+}
+
+.kontaktForma input {
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.kontaktForma label {
+    margin-left: 50px;
+   
+}
+.kontaktForma .ime {
+    width: 200px;
+    margin-left: 58px;
+    margin-top: 50px;
+}
+.kontaktForma .email {
+    width: 200px;
+    margin-left: 48px;
+    margin-top: 50px;
+}
+#message-input {
+    margin-left: 138px;
+    margin-top: -17px;
+    width: 400px;
+    height: 150px;
+    resize: none;
+}
+
+.message-box {
+    margin-top: 50px;
+}
+
+
+#submitButton {
+    margin-left: 279px;
+    margin-top: 20px;
+    
+}
