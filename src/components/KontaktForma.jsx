@@ -1,15 +1,60 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/KontaktForma.css'
 import axios from 'axios';
 
+axios.defaults.baseURL = "http://localhost:3000";
+
 function KontaktForma() {
+
+    const [poruke, postaviPoruke] = useState([]);
+    const promjenaUlaza = (event) => {
+        const { name, value } = event.target;
+
+        postaviPodatke({ ...formaPodaci, [name]: value });
+    };
+    
+    useEffect(() => {
+        axios.get("/poruke").then((res) => postaviPoruke(res.data));
+    }, [])
+      console.log(poruke);
   
     const [formaPodaci, postaviPodatke] = useState({
          ime: "",
          prezime: "",
-         mail: "",
-        poruka: ""
+         email: "",
+         poruka: ""
      });
+     function obradiPodatke(objekt) {
+        return {
+            
+                ime: objekt.ime,
+                prezime: objekt.prezime,
+                email: objekt.email,
+                poruka: objekt.poruka
+            
+        };
+    }
+
+   
+    const saljiPodatke = async (event) => {
+        event.preventDefault();
+        const messageInput = document.getElementById('message-input');
+        formaPodaci.poruka = messageInput.value;
+        messageInput.value='';
+
+        const zaSlanje = obradiPodatke(formaPodaci);
+        await axios.post("/poruke", zaSlanje);
+
+        const rezultat = await axios.get("/poruke");
+        postaviPoruke(rezultat.data);
+        postaviPodatke(
+            {
+            ime: "",
+            prezime: "",
+            email: "",
+            poruka: ""
+        })
+    };
     // const [poruka, saljiPoruku] = useState(false); 
     // const  [ime, postaviIme] = useState("");
     // const [imee, promjenaImena] = useState(false);
@@ -20,15 +65,16 @@ function KontaktForma() {
     // };
     return(
         <div className="kontaktForma">
-            <form >
+            <form onSubmit={saljiPodatke}>
                 <div>
                     <label>
                         Ime:
                         <input
                             className='ime'
                             type="ime"
-                            name="imee"
-                           
+                            name="ime"
+                            value={formaPodaci.ime}
+                            onChange={promjenaUlaza}
                             required
                         />
                     </label>
@@ -40,7 +86,8 @@ function KontaktForma() {
                             
                             type="prezime"
                             name="prezime"
-                           
+                            value={formaPodaci.prezime}
+                            onChange={promjenaUlaza}
                             required
                         />
                     </label>
@@ -52,6 +99,8 @@ function KontaktForma() {
                             className='email'
                             type="email"
                             name="email"
+                            value={formaPodaci.email}
+                            onChange={promjenaUlaza}
                             required
                         />
                     </label>
