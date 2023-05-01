@@ -24,8 +24,8 @@ function Zivotinja( {zivotinja, checked, postaviZivotinje, selectedOption1, sele
        <div className="zivotinjaBox"  style={{ backgroundColor: zivotinja.udomljen ? 'rgba(143, 132, 132, 0.396)' : ' lightgreen' }} >
             <p className='imeGodine'>{zivotinja.ime}, {zivotinja.godine} </p>
             <p>Vrsta: {zivotinja.vrsta}</p>
-            <p>Cip: {zivotinja.cip ? "cipiran" : "nije cipiran" }</p>
-            <p>Opis: {zivotinja.opis}</p>
+            <p>{zivotinja.cip ? "Čipiran" : "Nije Čipiran" }</p>
+            <p>{zivotinja.opis}</p>
             <p>Pregled: {zivotinja.pregled}</p>
             {zivotinja.udomljen ? <p className='udomljen' >UDOMLJEN!</p> : <button id='udomljenButton' onClick={udomiZivotinju}>Udomi</button> }
             {checked ?  <button id='urediButton' >Uredi</button> : ""}

@@ -10,6 +10,7 @@ import '../styles/Naslov.css'
 
 function Naslov() {
     const [checked, setChecked] = useState(true);
+    const [zivotinje, postaviZivotinje] = useState([]);
   const handleChange = val => {
     setChecked(val)
   }
@@ -43,8 +44,8 @@ function Naslov() {
       <Routes>
         <Route path="/" element={<OpciPodaci checked={checked}/>}></Route>
         <Route path="/donacije" element={<Donacije />}></Route>
-        <Route path="/popis" element={<Popis checked={checked} />}></Route>
-        <Route path="/unos" element={<Unos checked = {checked} />}></Route>
+        <Route path="/popis" element={<Popis checked={checked} zivotinje={zivotinje} postaviZivotinje={postaviZivotinje}/>}></Route>
+        <Route path="/unos" element={<Unos checked = {checked} zivotinje={zivotinje} postaviZivotinje={postaviZivotinje}/>}></Route>
         <Route path="/obavijesti" element={<Obavijesti />}></Route>
       </Routes>
       </div>

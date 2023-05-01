@@ -62,7 +62,7 @@ width: 200px;
 margin-left: 48px;
 margin-top: 50px;
 }
-#message-input {
+#message-input1 {
 margin-left: 138px;
 margin-top: -17px;
 width: 400px;
@@ -111,3 +111,7 @@ input.radio {
    margin-left: 50px;
 }
 
+.warning {
+    margin-left: 120px;
+    color: red;
+}

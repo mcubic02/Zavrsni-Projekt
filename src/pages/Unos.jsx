@@ -1,11 +1,49 @@
 import { useState } from 'react'
 import '../styles/Unos.css'
+import axios from 'axios';
 
-function Unos({ checked }) {
+function Unos({ checked, zivotinje, postaviZivotinje}) {
 
     const [selectedOption, setSelectedOption] = useState("mačka");
     const [isChecked, setIsChecked] = useState(false);
     const [selectedDate, setSelectedDate] = useState("");
+    const [warning, setWarning] = useState("");
+    const [formaPodaci, postaviPodatke] = useState({
+        ime: "",
+        vrsta: "",
+        cip: "",
+        godine: "",
+        opis: "",
+        pregled: "",
+        udomljen:""
+    });
+
+    const unesiZivotinju = async(event) => {
+        event.preventDefault();
+        const messageInput = document.getElementById('message-input1');
+        formaPodaci.poruka = messageInput.value;
+        messageInput.value = "";
+        formaPodaci.vrsta = selectedOption;
+        formaPodaci.cip = isChecked;
+        formaPodaci.pregled = selectedDate;
+        formaPodaci.udomljen = false;
+
+        const zaSlanje = obradiPodatke(formaPodaci);
+        await axios.post(`/zivotinje`, zaSlanje);
+        const rezultat = await axios.get("/zivotinje");
+        postaviZivotinje(rezultat.data);
+        postaviPodatke(
+            {
+                ime: "",
+                vrsta: "",
+                cip: "",
+                godine: "",
+                opis: "",
+                pregled: "",
+                udomljen:""
+            }
+        )
+    }
 
     function handleCheckboxChange(event) {
         if(isChecked)
@@ -22,6 +60,36 @@ function Unos({ checked }) {
         setSelectedOption(event.target.value);
     }
 
+    const promjenaUlaza = (event) => {
+        const { name, value } = event.target;
+
+        postaviPodatke({ ...formaPodaci, [name]: value });
+    }
+
+
+    function obradiPodatke(objekt) {
+        return {
+                ime: objekt.ime,
+                vrsta: objekt.vrsta,
+                cip: objekt.cip,
+                godine: objekt.godine,
+                opis: objekt.opis,
+                pregled: objekt.pregled,
+                udomljen: false
+        
+        };
+    }
+    function handleNumberChange(event) {
+        promjenaUlaza(event);
+        const value = event.target.value
+        if (value >= 0) {
+          setWarning('');
+        } else {
+
+          setWarning('Dob ne može biti negativan broj');
+        }
+      }
+
     if (!checked)
         return (
             <div className='adminOnly'>
@@ -34,7 +102,7 @@ function Unos({ checked }) {
             <div className='adminView'>
                 <div className="unosForma">
                     <p className='unosNaslov'>Unos nove zivotinje</p>
-                    <form >
+                    <form onSubmit={unesiZivotinju}>
                         <div className='flexForma'>
                             <div className='left'>
                                 <div className='divIme'>
@@ -44,7 +112,8 @@ function Unos({ checked }) {
                                             className='ime'
                                             type="ime"
                                             name="ime"
-
+                                            value={formaPodaci.ime}
+                                            onChange={promjenaUlaza}
                                             required
                                         />
                                     </label>
@@ -55,10 +124,14 @@ function Unos({ checked }) {
                                         <input
                                             className='dobLabel'
                                             type="number"
-                                            name="prezime"
-
+                                            name="godine"
+                                            value={formaPodaci.godine}
+                                            onChange={handleNumberChange}
                                             required
                                         />
+                                            {warning && <p className='warning'>{warning}</p>}
+
+                                         
                                     </label>
                                 </div>
                                 <div className='options'>
@@ -133,7 +206,7 @@ function Unos({ checked }) {
                             <label>
                                 Opis:
                                 <br></br>
-                                <textarea id="message-input" placeholder="Upisite opis"></textarea>
+                                <textarea id="message-input1" placeholder="Upisite opis"></textarea>
                             </label>
 
                         </div>

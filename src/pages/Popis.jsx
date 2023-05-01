@@ -3,10 +3,9 @@ import '../styles/Popis.css'
 import { useState, useEffect } from "react";
 import Zivotinja from "../components/Zivotinja";
 import Filter from "../components/Filter";
-import { key } from "localforage";
 
-function Popis({checked}) {
-    const [zivotinje, postaviZivotinje] = useState([]);
+function Popis({checked, zivotinje, postaviZivotinje}) {
+    
     const [selectedOption1, setSelectedOption1] = useState("svi");
     const [selectedOption2, setSelectedOption2] = useState("sviUdomljeni");
 useEffect(() => {
