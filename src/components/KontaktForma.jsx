@@ -4,20 +4,8 @@ import axios from 'axios';
 
 axios.defaults.baseURL = "http://localhost:3000";
 
-function KontaktForma() {
+function KontaktForma({postaviPoruke}) {
 
-    const [poruke, postaviPoruke] = useState([]);
-    const promjenaUlaza = (event) => {
-        const { name, value } = event.target;
-
-        postaviPodatke({ ...formaPodaci, [name]: value });
-    };
-    
-    useEffect(() => {
-        axios.get("/poruke").then((res) => postaviPoruke(res.data));
-    }, [])
-      console.log(poruke);
-  
     const [formaPodaci, postaviPodatke] = useState({
          ime: "",
          prezime: "",
@@ -55,6 +43,13 @@ function KontaktForma() {
             poruka: ""
         })
     };
+
+    const promjenaUlaza = (event) => {
+        const { name, value } = event.target;
+
+        postaviPodatke({ ...formaPodaci, [name]: value });
+    };
+
     // const [poruka, saljiPoruku] = useState(false); 
     // const  [ime, postaviIme] = useState("");
     // const [imee, promjenaImena] = useState(false);
@@ -65,8 +60,9 @@ function KontaktForma() {
     // };
     return(
         <div className="kontaktForma">
+            <p className='kontaktNaslov'>Kontaktirajte nas!</p>
             <form onSubmit={saljiPodatke}>
-                <div>
+                <div className='divIme'>
                     <label>
                         Ime:
                         <input

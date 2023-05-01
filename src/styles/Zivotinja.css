@@ -1,0 +1,30 @@
+.zivotinjaBox {
+    border-radius: 1.5em;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    width: 271px;
+    padding: 10px;
+    margin: 15px;
+}
+
+#udomljenButton {
+    background-color: rgba(143, 132, 132, 0.396);
+    border-radius: 0.75em;
+    border-color: black;
+}
+#urediButton {
+    background-color: rgba(143, 132, 132, 0.396);
+    border-radius: 0.75em;
+    border-color: black;
+    margin-left: 10px;
+}
+
+.imeGodine {
+    font-weight: bold;
+    font-size: large;
+}
+
+.udomljen {
+    font-weight: bold;
+}

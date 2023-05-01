@@ -29,10 +29,10 @@
       "id": 4
     },
     {
-      "ime": "ej",
-      "prezime": "dada",
-      "email": "marija@gmail",
-      "poruka": "vsfdyxv",
+      "ime": "jk",
+      "prezime": "jk",
+      "email": "bozo.cubic@gmail.com",
+      "poruka": "jhasyc x",
       "id": 5
     }
   ],
@@ -87,14 +87,34 @@
       "udomljen": true
     },
     {
-      "id": 2,
       "ime": "Snoopy",
       "vrsta": "pas",
-      "cip": true,
+      "cip": false,
       "godine": 50,
-      "opis": "Više od običnog psa",
-      "pregled": "2000-02-13",
-      "udomljen": false
+      "opis": "On nije kao ostali psi",
+      "pregled": "2022-09-23",
+      "udomljen": true,
+      "id": 2
+    },
+    {
+      "ime": "Snoopy",
+      "vrsta": "pas",
+      "cip": false,
+      "godine": 50,
+      "opis": "On nije kao ostali psi",
+      "pregled": "2022-09-23",
+      "udomljen": true,
+      "id": 3
+    },
+    {
+      "ime": "Snoopy",
+      "vrsta": "pas",
+      "cip": false,
+      "godine": 50,
+      "opis": "On nije kao ostali psi",
+      "pregled": "2022-09-23",
+      "udomljen": true,
+      "id": 4
     }
   ]
 }

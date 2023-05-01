@@ -21,7 +21,7 @@ function Naslov() {
             <p>Azil za životinje Šapa</p>
           </div>
           <div className='adminBox'>
-            <p>{checked ? 'ADMIN' : 'KORISNIK'} </p>
+            <p>VIEW: {checked ? 'ADMIN' : 'KORISNIK'} </p>
             <div className='reactSwitch'>
             <ReactSwitch
               checked={checked}
@@ -31,21 +31,23 @@ function Naslov() {
         </div>
         <nav>
           <ul>
-            <Link to="/" className='nav-link' >Opci podaci</Link>
+            <Link to="/" className='nav-link' >Opći podaci</Link>
             <Link to="/obavijesti" className='nav-link'>Obavijesti</Link>
             <Link to="/donacije" className='nav-link' >Donacije</Link>
-            <Link to="/popis" className='nav-link' >Popis</Link>
+            <Link to="/popis" className='nav-link' >Popis životinja</Link>
             <Link to="/unos" className='nav-link' >Unos</Link>
           </ul>
         </nav>
       </div>
+      <div className='box'>
       <Routes>
-        <Route path="/" element={<OpciPodaci />}></Route>
+        <Route path="/" element={<OpciPodaci checked={checked}/>}></Route>
         <Route path="/donacije" element={<Donacije />}></Route>
-        <Route path="/popis" element={<Popis />}></Route>
+        <Route path="/popis" element={<Popis checked={checked} />}></Route>
         <Route path="/unos" element={<Unos />}></Route>
         <Route path="/obavijesti" element={<Obavijesti />}></Route>
       </Routes>
+      </div>
     </>
     )
 }

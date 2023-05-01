@@ -1,0 +1,19 @@
+.popisBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: -3%;
+}
+
+.popisBox .left
+{
+    width: 300px;
+}
+
+.popisBox .right
+{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+}

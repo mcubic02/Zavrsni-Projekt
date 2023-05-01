@@ -1,14 +1,15 @@
 .kontaktForma {
         border-radius: 1.5em;
-        height: 500px;
+        height: 550px;
         width: 700px;
         border-color: brown;
         border-style: solid;
         background-color: rgba(143, 132, 132, 0.396);
         margin-top: 30px;
-        padding-top: 30px;
+        padding-top: 10px;
         text-align: left;
         padding-bottom: 20px;
+        margin-left: 40px;
 }
 
 .kontaktForma input {
@@ -49,3 +50,13 @@
     margin-top: 20px;
     
 }
+
+.kontaktNaslov {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: -3%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: brown;
+}
+
