@@ -44,7 +44,7 @@ function Naslov() {
         <Route path="/" element={<OpciPodaci checked={checked}/>}></Route>
         <Route path="/donacije" element={<Donacije />}></Route>
         <Route path="/popis" element={<Popis checked={checked} />}></Route>
-        <Route path="/unos" element={<Unos />}></Route>
+        <Route path="/unos" element={<Unos checked = {checked} />}></Route>
         <Route path="/obavijesti" element={<Obavijesti />}></Route>
       </Routes>
       </div>

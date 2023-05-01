@@ -3,11 +3,12 @@ import '../styles/Popis.css'
 import { useState, useEffect } from "react";
 import Zivotinja from "../components/Zivotinja";
 import Filter from "../components/Filter";
+import { key } from "localforage";
 
 function Popis({checked}) {
     const [zivotinje, postaviZivotinje] = useState([]);
-    const [selectedOption1, setSelectedOption1] = useState();
-    const [selectedOption2, setSelectedOption2] = useState();
+    const [selectedOption1, setSelectedOption1] = useState("svi");
+    const [selectedOption2, setSelectedOption2] = useState("sviUdomljeni");
 useEffect(() => {
     const dohvacanje = async () => {
         const dohvacanjeZivotinja = axios.get("/zivotinje");
