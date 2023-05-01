@@ -81,8 +81,8 @@ function Unos({ checked, zivotinje, postaviZivotinje}) {
     }
     function handleNumberChange(event) {
         promjenaUlaza(event);
-        const value = event.target.value
-        if (value >= 0) {
+        const godine = event.target.value
+        if (godine >= 0) {
           setWarning('');
         } else {
 

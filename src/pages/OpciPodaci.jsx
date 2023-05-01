@@ -21,7 +21,17 @@ function OpciPodaci({checked}) {
             <Karta/>
         </div>
         <div className="rightPodaci">
-           {checked ? <OdgovoriForme poruke={poruke} postaviPoruke={postaviPoruke}/> : <KontaktForma postaviPoruke={postaviPoruke}/>}
+            {checked ? <p className="odgovori">Odgovori na formu:</p> : ""}
+           {checked ? 
+           poruke.map((poruka) => (
+            <div className="okvirOdgovora">
+           <OdgovoriForme poruka={poruka} /> 
+           </div>
+           ))
+           
+           : 
+           <KontaktForma postaviPoruke={postaviPoruke}
+           />}
         </div>
     </div>
     )

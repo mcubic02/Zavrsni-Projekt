@@ -4,3 +4,18 @@
     justify-content: space-between;
     margin-top: -3%;
 }
+
+.okvirOdgovora {
+    margin-left: 200px;
+    margin-right: 205px;
+}
+
+.odgovori {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: -3%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    margin-bottom: 40px;
+}

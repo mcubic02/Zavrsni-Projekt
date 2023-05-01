@@ -9,16 +9,16 @@ function KontaktForma({postaviPoruke}) {
     const [formaPodaci, postaviPodatke] = useState({
          ime: "",
          prezime: "",
-         email: "",
-         poruka: ""
+         mail: "",
+         poruke: ""
      });
      function obradiPodatke(objekt) {
         return {
             
                 ime: objekt.ime,
                 prezime: objekt.prezime,
-                email: objekt.email,
-                poruka: objekt.poruka
+                mail: objekt.mail,
+                poruke: objekt.poruke
             
         };
     }
@@ -27,7 +27,7 @@ function KontaktForma({postaviPoruke}) {
     const saljiPodatke = async (event) => {
         event.preventDefault();
         const messageInput = document.getElementById('message-input');
-        formaPodaci.poruka = messageInput.value;
+        formaPodaci.poruke = messageInput.value;
         messageInput.value='';
 
         const zaSlanje = obradiPodatke(formaPodaci);
@@ -39,8 +39,8 @@ function KontaktForma({postaviPoruke}) {
             {
             ime: "",
             prezime: "",
-            email: "",
-            poruka: ""
+            mail: "",
+            poruke: ""
         })
     };
 
@@ -94,7 +94,7 @@ function KontaktForma({postaviPoruke}) {
                         <input
                             className='email'
                             type="email"
-                            name="email"
+                            name="mail"
                             value={formaPodaci.email}
                             onChange={promjenaUlaza}
                             required

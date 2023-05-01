@@ -17,22 +17,22 @@
     {
       "ime": "",
       "prezime": "Ahaa",
-      "email": "dudiljak9@gmail.com",
-      "poruka": "aejjjj",
+      "mail": "dudiljak9@gmail.com",
+      "poruke": "aejjjj",
       "id": 3
     },
     {
       "ime": "Ante",
       "prezime": "Peric",
-      "email": "bozo.cubic@gmail.com",
-      "poruka": "ahoy",
+      "mail": "bozo.cubic@gmail.com",
+      "poruke": "ahoy",
       "id": 4
     },
     {
       "ime": "jk",
       "prezime": "jk",
-      "email": "bozo.cubic@gmail.com",
-      "poruka": "jhasyc x",
+      "mail": "bozo.cubic@gmail.com",
+      "poruke": "jhasyc x",
       "id": 5
     }
   ],
