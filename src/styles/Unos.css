@@ -1,0 +1,113 @@
+.adminOnly{
+    width: 2000px;
+    height: 400px;
+    font-size: xx-large;
+}
+
+#pregled {
+    margin-left: 10px;
+}
+
+.labelAdminOnly{
+    margin-right: 700px;
+}
+
+.lock {
+    margin-right: 740px;
+    margin-top: 300px;
+}
+.unosForma {
+    border-radius: 1.5em;
+    height: auto;
+    width: 1000px;
+    border-color: brown;
+    border-style: solid;
+    background-color: rgba(143, 132, 132, 0.396);
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 130px;
+}
+
+.unosForma input {
+width: 200px;
+margin-left: 55px;
+margin-top: 50px;
+}
+
+.checkbox {
+    margin-right: -80px;
+    width: 15px;
+    height: 15px;
+}
+
+.checkboxLabel {
+    margin-right: 250px;
+    font-size: medium;
+}
+
+.unosForma label {
+margin-left: 50px;
+
+}
+.unosForma .ime {
+width: 200px;
+margin-left: 58px;
+margin-top: 50px;
+}
+.unosForma .email {
+width: 200px;
+margin-left: 48px;
+margin-top: 50px;
+}
+#message-input {
+margin-left: 138px;
+margin-top: -17px;
+width: 400px;
+height: 150px;
+resize: none;
+}
+
+.message-box {
+margin-top: 50px;
+}
+
+
+#submitButton {
+margin-left: 429px;
+margin-top: 20px;
+
+}
+
+.flexForma {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+
+
+
+.unosNaslov {
+text-align: center;
+font-size: x-large;
+margin-bottom: 30px;
+font-weight: bold;
+text-decoration: underline;
+text-decoration-color: brown;
+}
+
+
+.optionVrsta {
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+input.radio {
+    width: 15px;
+   margin-right: 5px;
+   margin-left: 50px;
+}
+
