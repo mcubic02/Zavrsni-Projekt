@@ -95,7 +95,7 @@ function KontaktForma({postaviPoruke}) {
                             className='email'
                             type="email"
                             name="mail"
-                            value={formaPodaci.email}
+                            value={formaPodaci.mail}
                             onChange={promjenaUlaza}
                             required
                         />

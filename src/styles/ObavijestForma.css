@@ -1,0 +1,53 @@
+#message-box3 {
+    margin-top: 50px;
+}
+
+#message-input2 {
+  
+    margin-top: 10px;
+    width: 400px;
+    height: 150px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.obavijestForma {
+    border-radius: 1.5em;
+    height: auto;
+    width: 450px;
+    border-color: brown;
+    border-style: solid;
+    background-color: rgba(143, 132, 132, 0.396);
+    margin-top: 30px;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    padding-left: 30px;
+}
+
+.kontaktNaslov1 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: brown;
+}
+
+.submitButton {
+    margin-top: 20px;
+    margin-left: 175px;
+}
+
+.obavijestForma .naslovInput {
+    width: 300px;
+}
+
+.checkboxLabel2 {
+    font-size: medium;
+}
+
+.checkbox2{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}

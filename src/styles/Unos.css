@@ -1,4 +1,4 @@
-.adminOnly{
+.adminOnly {
     width: 2000px;
     height: 400px;
     font-size: xx-large;
@@ -8,7 +8,7 @@
     margin-left: 10px;
 }
 
-.labelAdminOnly{
+.labelAdminOnly {
     margin-right: 700px;
 }
 
@@ -16,6 +16,7 @@
     margin-right: 740px;
     margin-top: 300px;
 }
+
 .unosForma {
     border-radius: 1.5em;
     height: auto;
@@ -32,9 +33,9 @@
 }
 
 .unosForma input {
-width: 200px;
-margin-left: 55px;
-margin-top: 50px;
+    width: 200px;
+    margin-left: 55px;
+    margin-top: 50px;
 }
 
 .checkbox {
@@ -49,53 +50,56 @@ margin-top: 50px;
 }
 
 .unosForma label {
-margin-left: 50px;
+    margin-left: 50px;
 
 }
+
 .unosForma .ime {
-width: 200px;
-margin-left: 58px;
-margin-top: 50px;
+    width: 200px;
+    margin-left: 58px;
+    margin-top: 50px;
 }
+
 .unosForma .email {
-width: 200px;
-margin-left: 48px;
-margin-top: 50px;
+    width: 200px;
+    margin-left: 48px;
+    margin-top: 50px;
 }
+
 #message-input1 {
-margin-left: 138px;
-margin-top: -17px;
-width: 400px;
-height: 150px;
-resize: none;
+    margin-left: 138px;
+    margin-top: -17px;
+    width: 400px;
+    height: 150px;
+    resize: none;
 }
 
 .message-box {
-margin-top: 50px;
+    margin-top: 50px;
 }
 
 
 #submitButton {
-margin-left: 429px;
-margin-top: 20px;
+    margin-left: 429px;
+    margin-top: 20px;
 
 }
 
 .flexForma {
     display: flex;
     flex-direction: row;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 
 
 .unosNaslov {
-text-align: center;
-font-size: x-large;
-margin-bottom: 30px;
-font-weight: bold;
-text-decoration: underline;
-text-decoration-color: brown;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: brown;
 }
 
 
@@ -107,8 +111,8 @@ text-decoration-color: brown;
 
 input.radio {
     width: 15px;
-   margin-right: 5px;
-   margin-left: 50px;
+    margin-right: 5px;
+    margin-left: 50px;
 }
 
 .warning {

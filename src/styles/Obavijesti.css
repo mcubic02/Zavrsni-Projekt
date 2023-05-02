@@ -1,0 +1,25 @@
+.dodavanjeObavijesti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom-color:rgba(41, 40, 40, 0.582) ;
+    border-bottom-width: 3px ;
+    border-bottom-style: solid;;
+}
+
+.dodavanjeObavijesti .topObavijesti {
+    width: 1300px;
+    
+}
+.dodavanjeObavijesti .bottomObavijesti {
+    width: 1300px;
+    text-align: left;
+    margin-left: 750px;
+}
+
+#novaObavijest{
+    border-color: brown;
+    border-width: 2px;
+}

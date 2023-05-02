@@ -46,7 +46,7 @@ function Naslov() {
         <Route path="/donacije" element={<Donacije />}></Route>
         <Route path="/popis" element={<Popis checked={checked} zivotinje={zivotinje} postaviZivotinje={postaviZivotinje}/>}></Route>
         <Route path="/unos" element={<Unos checked = {checked} zivotinje={zivotinje} postaviZivotinje={postaviZivotinje}/>}></Route>
-        <Route path="/obavijesti" element={<Obavijesti />}></Route>
+        <Route path="/obavijesti" element={<Obavijesti checked={checked} />}></Route>
       </Routes>
       </div>
     </>
