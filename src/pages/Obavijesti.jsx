@@ -1,9 +1,16 @@
-import { useState } from "react"
+import { useState, useEffect} from "react"
 import ObavijestForma from "../components/ObavijestForma";
 import '../styles/Obavijesti.css'
+import axios from "axios";
 
 function Obavijesti({checked}) {
     const [prikazForme, setPrikazForme] = useState(false);
+    const [obavijesti, postaviObavijesti] = useState([]);
+
+    useEffect(() => {
+        axios.get("/obavijesti").then((res) => postaviObavijesti(res.data));
+    }, [])
+      console.log(obavijesti);
     function prikaziFormu() {
         setPrikazForme(true);
     }
@@ -14,7 +21,7 @@ function Obavijesti({checked}) {
                     <button id="novaObavijest" onClick={prikaziFormu}>Nova obavijest</button>
                 </div>
                 <div className="bottomObavijesti">
-                    {prikazForme ? <ObavijestForma checked = {checked}/> : ""}
+                    {prikazForme ? <ObavijestForma checked = {checked} postaviObavijesti={postaviObavijesti} setPrikazForme={setPrikazForme}/> : ""}
                 </div>
             </div>
             <div className="popisObavijesti">
