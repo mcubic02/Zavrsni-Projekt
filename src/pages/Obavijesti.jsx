@@ -2,6 +2,7 @@ import { useState, useEffect} from "react"
 import ObavijestForma from "../components/ObavijestForma";
 import '../styles/Obavijesti.css'
 import axios from "axios";
+import PopisObavijesti from "../components/PopisObavijesti";
 
 function Obavijesti({checked}) {
     const [prikazForme, setPrikazForme] = useState(false);
@@ -25,7 +26,10 @@ function Obavijesti({checked}) {
                 </div>
             </div>
             <div className="popisObavijesti">
-
+                {obavijesti.map((obavijest)=>(
+                    <PopisObavijesti obavijest={obavijest}/>
+                ))}
+                
             </div>
         </>
     )
