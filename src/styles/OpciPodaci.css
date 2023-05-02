@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -3%;
+    margin-top: 100px;
+    width: 1261px;
 }
 
 .okvirOdgovora {
     margin-left: 200px;
-    margin-right: 205px;
+    margin-right: 105px;
 }
 
 .odgovori {

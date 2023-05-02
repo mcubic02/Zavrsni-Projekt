@@ -31,16 +31,11 @@
   }
   
   .naslovBox{
-    border: 1rem;
-    border-style: solid;
-    border-width: 3px;
-    border-color: brown;
     background-color:#d3cece;
-    width: 1300px;
-    margin-left: -1%;
+    width: 1525px;
     position: fixed;
-    margin-top: -2%;
-    
+    margin-left: -8.5%;
+    margin-bottom: 20px;
   }
   .naslov{
     display: flex;

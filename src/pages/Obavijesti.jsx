@@ -16,7 +16,7 @@ function Obavijesti({checked}) {
         setPrikazForme(true);
     }
     return (
-        <>
+        <div className="sveObavijesti">  
             <div className="dodavanjeObavijesti">
                 <div className="topObavijesti">
                     <button id="novaObavijest" onClick={prikaziFormu}>Nova obavijest</button>
@@ -27,11 +27,11 @@ function Obavijesti({checked}) {
             </div>
             <div className="popisObavijesti">
                 {obavijesti.map((obavijest)=>(
-                    <PopisObavijesti obavijest={obavijest} postaviObavijesti={postaviObavijesti}/>
+                    <PopisObavijesti obavijest={obavijest} postaviObavijesti={postaviObavijesti} checked={checked}/>
                 ))}
                 
             </div>
-        </>
+        </div>
     )
 }
 

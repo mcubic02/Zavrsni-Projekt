@@ -1,12 +1,14 @@
 .popisBox {
     display: flex;
     flex-direction: row;
-    margin-top: -3%;
+    padding-top: 20px;
+    width: 1261px;
+    padding-bottom: 30px;
 }
 
 .popisBox .left
 {
-    width: 300px;
+    width: 261px;
 }
 
 .popisBox .right
@@ -15,5 +17,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: -20px;
 }

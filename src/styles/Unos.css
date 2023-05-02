@@ -1,21 +1,20 @@
 .adminOnly {
-    width: 2000px;
-    height: 400px;
+    padding-top: 100px;
+    width: 1261px;
+    height: 800px;
     font-size: xx-large;
+}
+
+.adminView {
+    width: 1261px;
+    padding-top: 10px;
 }
 
 #pregled {
     margin-left: 10px;
 }
 
-.labelAdminOnly {
-    margin-right: 700px;
-}
 
-.lock {
-    margin-right: 740px;
-    margin-top: 300px;
-}
 
 .unosForma {
     border-radius: 1.5em;
@@ -30,6 +29,7 @@
     padding-bottom: 20px;
     margin-left: 150px;
     margin-right: 130px;
+    margin-bottom: 30px;
 }
 
 .unosForma input {

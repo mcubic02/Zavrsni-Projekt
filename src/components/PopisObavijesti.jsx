@@ -2,7 +2,7 @@ import '../styles/PopisObavijesti.css'
 import {FaTrash} from 'react-icons/fa'
 import axios from 'axios';
 
-function PopisObavijesti({obavijest, postaviObavijesti}) {
+function PopisObavijesti({obavijest, postaviObavijesti, checked}) {
 
     async function Delete() {
         await axios.delete(`/obavijesti/${obavijest.id}`);
@@ -17,10 +17,15 @@ function PopisObavijesti({obavijest, postaviObavijesti}) {
                 <p className='naslovObavijesti'>{obavijest.naslov}</p>
                 <div className='datumIDelete'>
                 <p className='datumObavijesti'>{obavijest.datum}</p> 
+                {checked ?
                 <button id='trashButton' onClick={Delete}>
                     <FaTrash/>
                 </button>
+                :
+                ""
+                }
                 </div>
+
                 
             </div>
             <div className='sadrzajObavijesti'>
