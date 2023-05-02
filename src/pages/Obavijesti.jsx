@@ -27,7 +27,7 @@ function Obavijesti({checked}) {
             </div>
             <div className="popisObavijesti">
                 {obavijesti.map((obavijest)=>(
-                    <PopisObavijesti obavijest={obavijest}/>
+                    <PopisObavijesti obavijest={obavijest} postaviObavijesti={postaviObavijesti}/>
                 ))}
                 
             </div>
