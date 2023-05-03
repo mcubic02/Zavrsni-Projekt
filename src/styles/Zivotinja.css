@@ -6,7 +6,7 @@
     width: 271px;
     padding: 10px;
     margin: 15px;
-    height: auto;
+    height: 320px;
 }
 
 #udomljenButton {
@@ -14,13 +14,17 @@
     border-radius: 0.75em;
     border-color: black;
 }
-#urediButton {
+.zivotinjeButton {
     background-color: rgba(143, 132, 132, 0.396);
     border-radius: 0.75em;
     border-color: black;
     margin-left: 10px;
 }
-
+#message-inputt{
+    margin-left: 5px;
+    margin-top: 10x;
+    resize: none;
+}
 .imeGodine {
     font-weight: bold;
     font-size: large;
@@ -28,4 +32,11 @@
 
 .udomljen {
     font-weight: bold;
+}
+
+.zivotinjaBox .ime1 {
+    width: 50px;
+}
+.zivotinjaBox .dobLabel1{
+    width: 30px;
 }

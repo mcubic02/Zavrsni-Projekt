@@ -14,6 +14,7 @@ function Naslov() {
   const handleChange = val => {
     setChecked(val)
   }
+  
     return(
         <>
       <div className='naslovBox'>

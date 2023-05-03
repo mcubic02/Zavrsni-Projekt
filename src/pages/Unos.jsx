@@ -181,7 +181,7 @@ function Unos({ checked, zivotinje, postaviZivotinje}) {
                                             name="prezime"
                                             checked = {isChecked}
                                             onChange={handleCheckboxChange}
-                                            required
+                                            
                                         />
                                         Čipiran
                                     </label>
