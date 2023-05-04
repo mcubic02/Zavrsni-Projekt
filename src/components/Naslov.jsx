@@ -44,7 +44,7 @@ function Naslov() {
       <div className='box'>
       <Routes>
         <Route path="/" element={<OpciPodaci checked={checked}/>}></Route>
-        <Route path="/donacije" element={<Donacije />}></Route>
+        <Route path="/donacije" element={<Donacije checked = {checked}/>}></Route>
         <Route path="/popis" element={<Popis checked={checked} zivotinje={zivotinje} postaviZivotinje={postaviZivotinje}/>}></Route>
         <Route path="/unos" element={<Unos checked = {checked} zivotinje={zivotinje} postaviZivotinje={postaviZivotinje}/>}></Route>
         <Route path="/obavijesti" element={<Obavijesti checked={checked} />}></Route>
