@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import '../styles/Zivotinja.css'
 import axios from 'axios';
 
-function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, selectedOption2 }) {
+function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, selectedOption2, reRender, setReRender }) {
 
     const [mijenjamo, postaviMijenjamo] = useState(false);
     const [selectedOption, setSelectedOption] = useState("");
@@ -11,18 +11,12 @@ function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, sele
     const [udomljenaZivotinja, setUdomljenaZivotinja] = useState(false);
     const [text, setText]= useState("");
     const [selectedDate,setSelectedDate]=useState("");
-    const [formaPodaci, postaviPodatke] = useState({
-        ime: "",
-        vrsta: "",
-        cip: "",
-        godine: "",
-        opis: "",
-        pregled: "",
-        udomljen:""
-    });
+    const [formaPodaci, postaviPodatke] = useState({});
     
     const handleDateChange = (event) => {
         setSelectedDate(event.target.value);
+        console.log(event.target.value);
+        console.log(selectedDate);
     }
     function handleCheckboxChange(event) {
         if(isChecked)
@@ -50,6 +44,15 @@ function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, sele
     function Uredi() {
         console.log(zivotinja);
         postaviPodatke(zivotinja);
+    //     postaviPodatke({
+    //     ime: zivotinja.ime,
+    //     vrsta: zivotinja.vrsta,
+    //     cip: zivotinja.cip,
+    //     godine: zivotinja.godine,
+    //     opis: zivotinja.opis,
+    //     pregled: zivotinja.pregled,
+    //     udomljen: zivotinja.udomljen
+    // });
 
         console.log(formaPodaci);
         
@@ -77,6 +80,17 @@ function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, sele
         const rezultat = await axios.get(`/zivotinje`);
         postaviPodatke(rezultat.data);
         postaviMijenjamo(false);
+        postaviPodatke(
+            {
+                ime: "",
+                vrsta: "",
+                cip: "",
+                godine: "",
+                opis: "",
+                pregled: "",
+                udomljen:""
+            }
+        )
     }
 
     const promjenaUlaza = (event) => {
@@ -169,7 +183,7 @@ function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, sele
                     <p>
                             <label>
                                 Opis:
-                                <textarea id="message-inputt" placeholder="Upisite opis" value={formaPodaci.opis} ></textarea>
+                                <input type="text" id="message-inputt" placeholder="Upisite opis" value={formaPodaci.opis} onChange={promjenaUlaza}></input>
                             </label>
                             </p>
                     </div>

@@ -21,7 +21,7 @@ function Unos({ checked, zivotinje, postaviZivotinje}) {
     const unesiZivotinju = async(event) => {
         event.preventDefault();
         const messageInput = document.getElementById('message-input1');
-        formaPodaci.poruka = messageInput.value;
+        formaPodaci.opis = messageInput.value;
         messageInput.value = "";
         formaPodaci.vrsta = selectedOption;
         formaPodaci.cip = isChecked;

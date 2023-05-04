@@ -57,6 +57,13 @@
       "datum": "",
       "vazno": false,
       "id": 8
+    },
+    {
+      "naslov": "fcx",
+      "tekst": "fds",
+      "datum": "",
+      "vazno": false,
+      "id": 9
     }
   ],
   "donacije": [
@@ -132,6 +139,32 @@
       "pregled": "2023-05-04",
       "udomljen": false,
       "id": 17
+    },
+    {
+      "ime": "Garfield",
+      "vrsta": "mačka",
+      "cip": true,
+      "godine": "44",
+      "opis": "",
+      "pregled": "2023-06-03",
+      "udomljen": false,
+      "id": 18
+    },
+    {
+      "ime": "ysd",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": "558",
+      "opis": "ej",
+      "pregled": "2023-05-19",
+      "udomljen": false,
+      "id": 19
     }
+  ],
+  "tipDonacije": [
+    "Hrana",
+    "Lijekovi",
+    "Veterinarski troškovi",
+    "Igračke"
   ]
 }

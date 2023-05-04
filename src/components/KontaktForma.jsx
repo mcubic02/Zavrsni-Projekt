@@ -34,6 +34,7 @@ function KontaktForma({postaviPoruke}) {
         await axios.post("/poruke", zaSlanje);
 
         const rezultat = await axios.get("/poruke");
+      
         postaviPoruke(rezultat.data);
         postaviPodatke(
             {

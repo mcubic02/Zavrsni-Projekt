@@ -8,7 +8,9 @@ function Popis({checked, zivotinje, postaviZivotinje}) {
     
     const [selectedOption1, setSelectedOption1] = useState("svi");
     const [selectedOption2, setSelectedOption2] = useState("sviUdomljeni");
-useEffect(() => {
+    const [reRender, setReRender] = useState("");
+    
+    useEffect(() => {
     const dohvacanje = async () => {
         const dohvacanjeZivotinja = axios.get("/zivotinje");
 
@@ -41,6 +43,8 @@ useEffect(() => {
                 checked={checked}
                 selectedOption1={selectedOption1} 
                 selectedOption2={selectedOption2} 
+                reRender= {reRender}
+                setReRender = {setReRender}
                 />
             ))}
         </div>
