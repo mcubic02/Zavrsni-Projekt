@@ -82,32 +82,25 @@
       "opis": "Grebalica za mačke"
     },
     {
-      "id": 3,
-      "kategorija": "nudi",
-      "tip": "Ostalo",
-      "vrijednost": 25,
-      "opis": "Kavez za srednje papige"
-    },
-    {
       "id": 4,
-      "kategorija": "trazi",
+      "kategorija": "donirano",
       "tip": "Igračke",
-      "vrijednost": 35,
+      "vrijednost": 36,
       "opis": "Gumena kost"
     },
     {
-      "tip": "Lijekovi",
-      "vrijednost": "100",
-      "opis": "Lijek za bjesnoću",
-      "kategorija": "trazi",
-      "id": 5
+      "id": 6,
+      "kategorija": "nudi",
+      "tip": "Igračke",
+      "vrijednost": 38,
+      "opis": "Gumena kost"
     },
     {
-      "tip": "Hrana",
-      "vrijednost": "50",
-      "opis": "Hrana za pse",
-      "kategorija": "nudi",
-      "id": 6
+      "tip": "Igračke",
+      "vrijednost": 36,
+      "opis": "Gumena kost",
+      "kategorija": "trazi",
+      "id": 7
     }
   ],
   "zivotinje": [

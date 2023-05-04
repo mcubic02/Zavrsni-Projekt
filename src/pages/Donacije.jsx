@@ -48,7 +48,7 @@ function Donacije({checked}) {
                 ""
             }
             </div>
-            <PopisDonacija donacije={donacije}/>
+            <PopisDonacija donacije={donacije} checked={checked} postaviDonacije={postaviDonacije}/>
 
         </div>
 

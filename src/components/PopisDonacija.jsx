@@ -3,7 +3,7 @@ import Donirano from "./Donirano"
 import Nudim from "./Nudim"
 import Trazim from "./Trazim"
 import '../styles/PopisDonacija.css'
-function PopisDonacija({ donacije }) {
+function PopisDonacija({ donacije, checked, postaviDonacije }) {
 
 
     return (
@@ -17,7 +17,7 @@ function PopisDonacija({ donacije }) {
                     <td>Opis</td>
                 </tr>
                 {donacije.map((donacija) => (
-                    <Trazim donacija={donacija} />
+                    <Trazim donacija={donacija} checked={checked} postaviDonacije = {postaviDonacije}/>
                 ))}
 
             </table>
@@ -28,9 +28,10 @@ function PopisDonacija({ donacije }) {
                     <td>Tip</td>
                     <td>Vrijednost</td>
                     <td>Opis</td>
+
                 </tr>
                 {donacije.map((donacija) => (
-                    <Nudim donacija={donacija} />
+                    <Nudim donacija={donacija} checked={checked} postaviDonacije={postaviDonacije} />
                 ))}
 
             </table>
@@ -43,7 +44,7 @@ function PopisDonacija({ donacije }) {
                     <td>Opis</td>
                 </tr>
                 {donacije.map((donacija) => (
-                    <Donirano donacija={donacija} />
+                    <Donirano donacija={donacija} checked={checked} postaviDonacije={postaviDonacije}/>
                 ))}
 
             </table>
