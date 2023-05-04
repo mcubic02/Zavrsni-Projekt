@@ -48,30 +48,7 @@ function Donacije({checked}) {
                 ""
             }
             </div>
-            <div className='popisDonacija'>
-                <table className='tablicaTrazim'>
-                    <tr>Tražimo:</tr>
-                    {donacije.map((donacija)=>(
-                    <Trazim donacija={donacija}/>
-                    ))}
-                    
-                </table>
-                <table className='tablicaNudim'>
-                    <tr>Nudim:</tr>
-                    {donacije.map((donacija)=>(
-                    <Nudim donacija={donacija}/>
-                    ))}
-                    
-                </table>
-                <table className='tablicaDonirano'>
-                    <tr>Donirano:</tr>
-                    {donacije.map((donacija)=>(
-                    <Donirano donacija={donacija}/>
-                    ))}
-                    
-                </table>
-              
-            </div>
+            <PopisDonacija donacije={donacije}/>
 
         </div>
 

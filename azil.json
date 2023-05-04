@@ -87,6 +87,27 @@
       "tip": "Ostalo",
       "vrijednost": 25,
       "opis": "Kavez za srednje papige"
+    },
+    {
+      "id": 4,
+      "kategorija": "trazi",
+      "tip": "Igračke",
+      "vrijednost": 35,
+      "opis": "Gumena kost"
+    },
+    {
+      "tip": "Lijekovi",
+      "vrijednost": "100",
+      "opis": "Lijek za bjesnoću",
+      "kategorija": "trazi",
+      "id": 5
+    },
+    {
+      "tip": "Hrana",
+      "vrijednost": "50",
+      "opis": "Hrana za pse",
+      "kategorija": "nudi",
+      "id": 6
     }
   ],
   "zivotinje": [
