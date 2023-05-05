@@ -1,4 +1,10 @@
 {
+  "kontakt": {
+    "ime": "Azil za životinje Šapa",
+    "adresa": "Domovinskog rata 48, 21312 Podstrana",
+    "broj": "021/123 457",
+    "mail": "azil.zazivotinje@gmail.com"
+  },
   "poruke": [
     {
       "id": 1,
@@ -115,7 +121,7 @@
       "id": 1
     },
     {
-      "ime": "Snoopy",
+      "ime": "Snoop",
       "vrsta": "pas",
       "cip": false,
       "godine": 50,

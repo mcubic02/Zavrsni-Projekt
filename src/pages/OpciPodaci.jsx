@@ -17,7 +17,7 @@ function OpciPodaci({checked}) {
     return (
     <div className="opciPodaci">
         <div className="leftPodaci">
-            <Kontakt/>
+            <Kontakt checked={checked}/>
             <Karta/>
         </div>
         <div className="rightPodaci">

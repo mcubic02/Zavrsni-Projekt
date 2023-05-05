@@ -101,7 +101,7 @@ function Unos({ checked, zivotinje, postaviZivotinje}) {
         return (
             <div className='adminView'>
                 <div className="unosForma">
-                    <p className='unosNaslov'>Unos nove zivotinje</p>
+                    <p className='unosNaslov'>Unos nove životinje</p>
                     <form onSubmit={unesiZivotinju}>
                         <div className='flexForma'>
                             <div className='left'>
@@ -211,7 +211,7 @@ function Unos({ checked, zivotinje, postaviZivotinje}) {
 
                         </div>
 
-                        <button id="submitButton" type="submit" >Posalji poruku</button>
+                        <button id="submitButton" type="submit" >Unesi životinju</button>
 
                     </form>
                 </div>
