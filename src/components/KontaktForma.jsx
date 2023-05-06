@@ -111,7 +111,7 @@ function KontaktForma({postaviPoruke}) {
                      
                 </div>
 
-                <button id="submitButton1" type="submit" >Posalji poruku</button>
+                <button id="submitButton1" type="submit" >Pošalji poruku</button>
 
             </form>
         </div>

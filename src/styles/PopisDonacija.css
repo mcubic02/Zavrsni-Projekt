@@ -17,7 +17,7 @@
     font-size: x-large;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: brown;
+    text-decoration-color: rgb(33, 48, 33);
 }
 
 table td{

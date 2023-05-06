@@ -2,7 +2,7 @@
   "kontakt": {
     "ime": "Azil za životinje Šapa",
     "adresa": "Domovinskog rata 48, 21312 Podstrana",
-    "broj": "021/123 457",
+    "broj": "021/123 456",
     "mail": "azil.zazivotinje@gmail.com"
   },
   "poruke": [
@@ -40,6 +40,13 @@
       "mail": "bozo.cubic@gmail.com",
       "poruke": "jhasyc x",
       "id": 5
+    },
+    {
+      "ime": "Domagoj",
+      "prezime": "Garac",
+      "mail": "domogarac@gmail.com",
+      "poruke": "Želim udomiti psa!",
+      "id": 6
     }
   ],
   "obavijesti": [
@@ -63,13 +70,6 @@
       "datum": "",
       "vazno": false,
       "id": 8
-    },
-    {
-      "naslov": "fcx",
-      "tekst": "fds",
-      "datum": "",
-      "vazno": false,
-      "id": 9
     }
   ],
   "donacije": [
@@ -79,13 +79,6 @@
       "tip": "Hrana",
       "vrijednost": 25,
       "opis": "Suha hrana za pse - 10kg"
-    },
-    {
-      "id": 2,
-      "kategorija": "trazi",
-      "tip": "Igračke",
-      "vrijednost": 15,
-      "opis": "Grebalica za mačke"
     },
     {
       "id": 4,
@@ -107,6 +100,20 @@
       "opis": "Gumena kost",
       "kategorija": "trazi",
       "id": 7
+    },
+    {
+      "tip": "Lijekovi",
+      "vrijednost": "40",
+      "opis": "Lijek za kašalj",
+      "kategorija": "donirano",
+      "id": 8
+    },
+    {
+      "tip": "Hrana",
+      "vrijednost": "30",
+      "opis": "Hrana za papige",
+      "kategorija": "nudi",
+      "id": 10
     }
   ],
   "zivotinje": [
@@ -117,7 +124,7 @@
       "godine": 44,
       "opis": "Voli lazanje",
       "pregled": "2022-09-23",
-      "udomljen": false,
+      "udomljen": true,
       "id": 1
     },
     {
@@ -127,7 +134,7 @@
       "godine": 50,
       "opis": "On nije kao ostali psi",
       "pregled": "2022-09-23",
-      "udomljen": false,
+      "udomljen": true,
       "id": 2
     },
     {
@@ -179,6 +186,36 @@
       "pregled": "2023-05-19",
       "udomljen": false,
       "id": 19
+    },
+    {
+      "ime": "Toto",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": "4",
+      "opis": "Voli trčat!",
+      "pregled": "2023-05-01",
+      "udomljen": false,
+      "id": 20
+    },
+    {
+      "ime": "ghj",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": "6",
+      "opis": "ghj",
+      "pregled": "2023-05-05",
+      "udomljen": false,
+      "id": 21
+    },
+    {
+      "ime": "hj",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": "6",
+      "opis": "vbn",
+      "pregled": "2023-05-12",
+      "udomljen": false,
+      "id": 22
     }
   ],
   "tipDonacije": [

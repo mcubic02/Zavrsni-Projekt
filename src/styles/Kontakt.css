@@ -2,7 +2,7 @@
     border-radius: 1.5em;
     height: auto;
     width: 500px;
-    border-color: brown;
+    border-color: rgb(33, 48, 33);
     border-style: solid;
     background-color: rgba(143, 132, 132, 0.396);
     padding: 10px;
@@ -13,4 +13,8 @@
 
 .kontaktBox input {
     margin-bottom: 20px;
+}
+.kontaktIme {
+    font-size: large;
+    font-weight: bold;
 }

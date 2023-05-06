@@ -15,7 +15,7 @@
     border-radius: 1.5em;
     height: auto;
     width: 450px;
-    border-color: brown;
+    border-color: rgb(33, 48, 33);
     border-style: solid;
     background-color: rgba(143, 132, 132, 0.396);
     margin-top: 30px;
@@ -26,11 +26,11 @@
 }
 
 .kontaktNaslov1 {
-    text-align: center;
+    margin-left: 80px;
     font-size: x-large;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: brown;
+    text-decoration-color: rgb(33, 48, 33);
 }
 
 .submitButton {

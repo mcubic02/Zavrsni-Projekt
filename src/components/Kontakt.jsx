@@ -96,7 +96,7 @@ function Kontakt({checked}) {
         else
         return(
             <div className="kontaktBox">
-                <p>{kontakt.ime}</p>
+                <p className='kontaktIme'>{kontakt.ime}</p>
                 <p>{kontakt.adresa}</p>
                 <p>{kontakt.broj}</p>
                 <p>{kontakt.mail}</p>
@@ -107,7 +107,7 @@ function Kontakt({checked}) {
     else
     return(
         <div className="kontaktBox">
-                <p>{kontakt.ime}</p>
+                <p className='kontaktIme'>{kontakt.ime}</p>
                 <p>{kontakt.adresa}</p>
                 <p>{kontakt.broj}</p>
                 <p>{kontakt.mail}</p>

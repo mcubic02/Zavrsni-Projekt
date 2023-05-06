@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import '../styles/Zivotinja.css'
 import axios from 'axios';
 
-function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, selectedOption2, reRender, setReRender }) {
+function Zivotinja({ zivotinja, checked, postaviZivotinje, selectedOption1, selectedOption2 }) {
 
     const [mijenjamo, postaviMijenjamo] = useState(false);
     const [selectedOption, setSelectedOption] = useState("");
