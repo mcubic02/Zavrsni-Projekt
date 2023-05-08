@@ -10,10 +10,24 @@ function OpciPodaci({checked}) {
 
     const [poruke, postaviPoruke] = useState([]);
 
+    
     useEffect(() => {
-        axios.get("/poruke").then((res) => postaviPoruke(res.data));
+        const dohvacanje = async() => 
+        {
+            const dohvacanjePoruka = await axios.get("/poruke");
+            try{
+                const data = dohvacanjePoruka.data;
+                const sortedData = data.sort((a,b) => new Date(b.datum) - new Date(a.datum));
+                postaviPoruke(sortedData);
+            }
+            catch(error) 
+            {
+                console.log(error);
+            }
+        }
+        dohvacanje();
     }, [])
-      console.log(poruke);
+
     return (
     <div className="opciPodaci">
         <div className="leftPodaci">

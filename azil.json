@@ -7,69 +7,111 @@
   },
   "poruke": [
     {
-      "id": 1,
-      "ime": "Marija",
-      "prezime": "Cubic",
-      "mail": "marijacubic@gmail.com",
-      "poruke": "Pozdrav!!"
-    },
-    {
-      "id": 2,
-      "ime": "Petar",
-      "prezime": "Peric",
-      "mail": "petarperic@gmail.com",
-      "poruke": "Pozdrav!!"
-    },
-    {
-      "ime": "",
-      "prezime": "Ahaa",
-      "mail": "dudiljak9@gmail.com",
-      "poruke": "aejjjj",
-      "id": 3
-    },
-    {
-      "ime": "Ante",
-      "prezime": "Peric",
-      "mail": "bozo.cubic@gmail.com",
-      "poruke": "ahoy",
-      "id": 4
-    },
-    {
-      "ime": "jk",
-      "prezime": "jk",
-      "mail": "bozo.cubic@gmail.com",
-      "poruke": "jhasyc x",
-      "id": 5
-    },
-    {
       "ime": "Domagoj",
       "prezime": "Garac",
       "mail": "domogarac@gmail.com",
-      "poruke": "Želim udomiti psa!",
-      "id": 6
+      "poruke": "Želim usvojiti psa!",
+      "datum": "2023-05-08T15:38:59.204Z",
+      "id": 2
+    },
+    {
+      "ime": "Marija",
+      "prezime": "Ćubić",
+      "mail": "marijacubic73@gmail.com",
+      "poruke": "Koje životinje mogu udomiti?",
+      "datum": "2023-05-08T15:47:03.067Z",
+      "id": 3
     }
   ],
   "obavijesti": [
     {
-      "id": 1,
-      "naslov": "Svečano otvorenje",
-      "datum": "2023-04-17",
-      "tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
-      "vazno": true
-    },
-    {
-      "id": 2,
-      "naslov": "Međunarodni dan mačaka",
-      "datum": "2023-02-17",
-      "tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
-      "vazno": false
-    },
-    {
-      "naslov": "Svjetski dan pasa",
-      "tekst": "Slavi se svake godine 19. listopada!",
-      "datum": "",
+      "naslov": "najnovijaa",
+      "tekst": "naajnovija",
+      "datum": "2023-05-07T23:42:13.636Z",
       "vazno": false,
-      "id": 8
+      "id": 12
+    },
+    {
+      "naslov": "najnajnnovija",
+      "tekst": "dd",
+      "datum": "2023-05-07T23:45:01.429Z",
+      "vazno": false,
+      "id": 13
+    },
+    {
+      "naslov": "Svečano otvorenje",
+      "tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
+      "datum": "2023-05-07T23:47:10.057Z",
+      "vazno": false,
+      "id": 14
+    },
+    {
+      "naslov": "edc",
+      "tekst": "asdcx",
+      "datum": "2023-05-08T00:17:17.204Z",
+      "vazno": false,
+      "id": 15
+    },
+    {
+      "naslov": "najnovija",
+      "tekst": "ehey",
+      "datum": "2023-05-08T00:21:16.459Z",
+      "vazno": false,
+      "id": 16
+    },
+    {
+      "naslov": "najnajnjanjnajnajnnovija",
+      "tekst": "naajnovija",
+      "datum": "2023-05-08T00:23:44.181Z",
+      "vazno": false,
+      "id": 17
+    },
+    {
+      "naslov": "njanjanjanjan",
+      "tekst": "nadja domo",
+      "datum": "2023-05-08T00:24:40.223Z",
+      "vazno": false,
+      "id": 18
+    },
+    {
+      "naslov": "oce sad",
+      "tekst": "mos mislit",
+      "datum": "2023-05-08T00:32:30.367Z",
+      "vazno": false,
+      "id": 19
+    },
+    {
+      "naslov": "da",
+      "tekst": "da",
+      "datum": "2023-05-08T00:34:52.823Z",
+      "vazno": false,
+      "id": 20
+    },
+    {
+      "datum": "2023-05-08T00:35:52.392Z",
+      "vazno": true,
+      "id": 21
+    },
+    {
+      "naslov": "dada",
+      "tekst": "dada",
+      "datum": "2023-05-08T00:45:01.564Z",
+      "vazno": true,
+      "id": 22
+    },
+    {
+      "naslov": "oce sad",
+      "tekst": "aa",
+      "datum": "2023-05-08T00:47:04.716Z",
+      "vazno": false,
+      "id": 23
+    },
+    {
+      "naslov": "ds",
+      "tekst": "sadf",
+      "datum": "2023-05-08T01:11:21.087Z",
+      "vazno": false,
+      "id": 24
     }
   ],
   "donacije": [
@@ -120,21 +162,21 @@
     {
       "ime": "Garfield",
       "vrsta": "mačka",
-      "cip": false,
-      "godine": 44,
+      "cip": "on",
+      "godine": "44",
       "opis": "Voli lazanje",
-      "pregled": "2022-09-23",
+      "pregled": "2023-05-16",
       "udomljen": true,
       "id": 1
     },
     {
       "ime": "Snoop",
       "vrsta": "pas",
-      "cip": false,
+      "cip": "false",
       "godine": 50,
       "opis": "On nije kao ostali psi",
       "pregled": "2022-09-23",
-      "udomljen": true,
+      "udomljen": "true",
       "id": 2
     },
     {
@@ -150,11 +192,11 @@
     {
       "ime": "Snoopy",
       "vrsta": "pas",
-      "cip": false,
+      "cip": "false",
       "godine": 50,
       "opis": "On nije kao ostali psi",
       "pregled": "2022-09-23",
-      "udomljen": false,
+      "udomljen": true,
       "id": 4
     },
     {
@@ -174,7 +216,7 @@
       "godine": "44",
       "opis": "",
       "pregled": "2023-06-03",
-      "udomljen": false,
+      "udomljen": true,
       "id": 18
     },
     {
@@ -194,7 +236,7 @@
       "godine": "4",
       "opis": "Voli trčat!",
       "pregled": "2023-05-01",
-      "udomljen": false,
+      "udomljen": true,
       "id": 20
     },
     {
@@ -214,8 +256,18 @@
       "godine": "6",
       "opis": "vbn",
       "pregled": "2023-05-12",
-      "udomljen": false,
+      "udomljen": true,
       "id": 22
+    },
+    {
+      "ime": "fasdsf",
+      "vrsta": "ostalo",
+      "cip": false,
+      "godine": "56",
+      "opis": "",
+      "pregled": "2023-05-17",
+      "udomljen": true,
+      "id": 23
     }
   ],
   "tipDonacije": [

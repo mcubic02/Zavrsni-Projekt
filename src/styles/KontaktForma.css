@@ -10,7 +10,7 @@
         text-align: left;
         padding-bottom: 20px;
         margin-left: 40px;
-        border-color: rgba(75, 178, 100, 0.853);
+        border-color: rgb(33, 48, 33);
 }
 
 .kontaktForma input {
@@ -61,3 +61,8 @@
     text-decoration-color: rgb(33, 48, 33);
 }
 
+.messageSent {
+    font-size: xx-large;
+    margin-right: 200px;
+    margin-top: 250px;
+}

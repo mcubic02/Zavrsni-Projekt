@@ -8,13 +8,35 @@ function Obavijesti({checked}) {
     const [prikazForme, setPrikazForme] = useState(false);
     const [obavijesti, postaviObavijesti] = useState([]);
 
+    const refreshPage = () => {
+        window.location.reload();
+      };
+      
+
+
     useEffect(() => {
-        axios.get("/obavijesti").then((res) => postaviObavijesti(res.data));
+        const dohvacanje = async() => 
+        {
+            const dohvacanjeObavijesti = await axios.get("/obavijesti");
+            try{
+                const data = dohvacanjeObavijesti.data;
+                const sortedData = data.sort((a,b) => new Date(b.datum) - new Date(a.datum));
+                postaviObavijesti(sortedData);
+            }
+            catch(error) 
+            {
+                console.log(error);
+            }
+        }
+        dohvacanje();
+            
+        
     }, [])
       console.log(obavijesti);
     function prikaziFormu() {
         setPrikazForme(true);
     }
+    
     return (
         <div className="sveObavijesti">  
             <div className="dodavanjeObavijesti">
@@ -22,12 +44,12 @@ function Obavijesti({checked}) {
                     <button id="novaObavijest" onClick={prikaziFormu}>Nova obavijest</button>
                 </div>
                 <div className="bottomObavijesti">
-                    {prikazForme ? <ObavijestForma checked = {checked} postaviObavijesti={postaviObavijesti} setPrikazForme={setPrikazForme}/> : ""}
+                    {prikazForme ? <ObavijestForma checked = {checked} postaviObavijesti={postaviObavijesti} setPrikazForme={setPrikazForme} refreshPage={refreshPage} /> : ""}
                 </div>
             </div>
             <div className="popisObavijesti">
                 {obavijesti.map((obavijest)=>(
-                    <PopisObavijesti obavijest={obavijest} postaviObavijesti={postaviObavijesti} checked={checked}/>
+                    <PopisObavijesti obavijest={obavijest} postaviObavijesti={postaviObavijesti}  checked={checked} />
                 ))}
                 
             </div>

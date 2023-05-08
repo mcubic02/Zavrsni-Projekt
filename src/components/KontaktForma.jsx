@@ -6,6 +6,7 @@ axios.defaults.baseURL = "http://localhost:3000";
 
 function KontaktForma({postaviPoruke}) {
 
+    const [showMessage, setShowMessage] = useState(false);
     const [formaPodaci, postaviPodatke] = useState({
          ime: "",
          prezime: "",
@@ -18,7 +19,8 @@ function KontaktForma({postaviPoruke}) {
                 ime: objekt.ime,
                 prezime: objekt.prezime,
                 mail: objekt.mail,
-                poruke: objekt.poruke
+                poruke: objekt.poruke,
+                datum: objekt.datum
             
         };
     }
@@ -29,19 +31,27 @@ function KontaktForma({postaviPoruke}) {
         const messageInput = document.getElementById('message-input');
         formaPodaci.poruke = messageInput.value;
         messageInput.value='';
-
+        formaPodaci.datum = new Date();
         const zaSlanje = obradiPodatke(formaPodaci);
         await axios.post("/poruke", zaSlanje);
 
         const rezultat = await axios.get("/poruke");
+
       
         postaviPoruke(rezultat.data);
+
+        setShowMessage(true);
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 5000);
+
         postaviPodatke(
             {
             ime: "",
             prezime: "",
             mail: "",
-            poruke: ""
+            poruke: "",
+            datum:""
         })
     };
 
@@ -60,7 +70,11 @@ function KontaktForma({postaviPoruke}) {
     //     postaviPodatke({ ...formaPodaci, [ime]: value });
     // };
     return(
-        <div className="kontaktForma">
+        
+            showMessage ? 
+            <p className='messageSent'>Poruka je poslana!</p>
+            :
+            <div className="kontaktForma">
             <p className='kontaktNaslov'>Kontaktirajte nas!</p>
             <form onSubmit={saljiPodatke}>
                 <div className='divIme'>
@@ -114,7 +128,9 @@ function KontaktForma({postaviPoruke}) {
                 <button id="submitButton1" type="submit" >Pošalji poruku</button>
 
             </form>
+
         </div>
+            
     )
 }
 

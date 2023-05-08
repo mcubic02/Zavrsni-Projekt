@@ -2,7 +2,7 @@ import '../styles/ObavijestForma.css'
 import { useState } from 'react';
 import axios from 'axios';
 
-function ObavijestForma({checked, postaviObavijesti, setPrikazForme}) {
+function ObavijestForma({checked, postaviObavijesti, setPrikazForme, refreshPage}) {
 
     const [isChecked, setIsChecked] = useState(false);
 
@@ -22,18 +22,15 @@ function ObavijestForma({checked, postaviObavijesti, setPrikazForme}) {
     }
 
     function handleCheckboxChange(event) {
-        if(isChecked)
-            setIsChecked(false);
-        else
-            setIsChecked(true);
+        const {checked} = event.target;
+        setIsChecked(checked);
+        postaviPodatke({ ...formaPodaci, vazno: checked });
     }
 
     const objaviObavijest = async (event) => {
         event.preventDefault();
-        const messageInput = document.getElementById('message-input2');
-        formaPodaci.tekst = messageInput.value;
-        messageInput.value='';
         formaPodaci.vazno = isChecked;
+        formaPodaci.datum = new Date();
 
         const zaSlanje = obradiPodatke(formaPodaci);
         await axios.post("/obavijesti", zaSlanje);
@@ -48,6 +45,7 @@ function ObavijestForma({checked, postaviObavijesti, setPrikazForme}) {
             vazno: ""
         })
         setPrikazForme(false);
+        refreshPage();
     };
 
     const promjenaUlaza = (event) => {
@@ -76,7 +74,7 @@ function ObavijestForma({checked, postaviObavijesti, setPrikazForme}) {
                     <label>
                         Tekst:
                         <br></br>
-                        <textarea id="message-input2" placeholder="Type your message here"></textarea>
+                        <textarea id="message-input2" placeholder="Type your message here" name='tekst' value={formaPodaci.tekst} onChange={promjenaUlaza}></textarea>
                     </label>
                 </div>
                 {checked ? 
@@ -85,9 +83,10 @@ function ObavijestForma({checked, postaviObavijesti, setPrikazForme}) {
                         <input
                             className='checkbox2'
                             type="checkbox"
-                            name="važno"
+                            name="vazno"
                             checked={isChecked}
                             onChange={handleCheckboxChange}
+                            value={isChecked}
         
                         />
                         Važno

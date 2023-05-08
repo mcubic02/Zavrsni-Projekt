@@ -40,7 +40,7 @@ function Popis({checked, zivotinje, postaviZivotinje}) {
                 <Zivotinja 
                 zivotinja={zivotinja} 
                 postaviZivotinje = {postaviZivotinje} 
-                checked={checked}
+                checkedd={checked}
                 selectedOption1={selectedOption1} 
                 selectedOption2={selectedOption2} 
                 reRender= {reRender}
