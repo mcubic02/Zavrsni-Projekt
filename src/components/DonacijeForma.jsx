@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import CheckedContext from "../context/CheckedContext";
 
-function DonacijeForma({postaviDonacije, setShowForm, checked}) {
+function DonacijeForma({postaviDonacije, setShowForm}) {
 
+    const {checked, handleChange} = useContext(CheckedContext);
     const [warning, setWarning] = useState("");
     const [tipoviDonacija, postaviTipoveDonacija] = useState([]);
     const [formaPodaci, postaviPodatke] = useState({

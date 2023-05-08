@@ -1,8 +1,6 @@
 import '../styles/OdgovoriForme.css'
 import { useEffect, useState } from 'react';
 
-
-
 function OdgovoriForme ({poruka}){
 
     const [godina, postaviGodinu]= useState("");

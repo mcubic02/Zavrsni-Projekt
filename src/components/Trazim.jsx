@@ -1,7 +1,10 @@
 import axios from "axios";
+import { useContext } from "react";
+import CheckedContext from "../context/CheckedContext";
 
-function Trazim({donacija, checked, postaviDonacije}) {
+function Trazim({donacija, postaviDonacije}) {
 
+    const {checked, handleChange} = useContext(CheckedContext);
     async function Donirano() {
 
         await axios.patch(`/donacije/${donacija.id}`, { kategorija: "donirano" });

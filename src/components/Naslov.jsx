@@ -5,15 +5,15 @@ import OpciPodaci from '../pages/OpciPodaci'
 import Popis from '../pages/Popis'
 import Unos from '../pages/Unos'
 import ReactSwitch from 'react-switch'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import '../styles/Naslov.css'
+import CheckedContext from '../context/CheckedContext'
 
 function Naslov() {
-    const [checked, setChecked] = useState(true);
+    const {checked, handleChange} = useContext(CheckedContext);
+    
     const [zivotinje, postaviZivotinje] = useState([]);
-  const handleChange = val => {
-    setChecked(val)
-  }
+  
   
     return(
         <>

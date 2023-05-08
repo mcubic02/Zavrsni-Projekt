@@ -1,6 +1,10 @@
 import axios from "axios";
-function Nudim({donacija, checked, postaviDonacije}) {
+import { useContext } from "react";
+import CheckedContext from "../context/CheckedContext";
 
+function Nudim({donacija, postaviDonacije}) {
+
+    const {checked, handleChange} = useContext(CheckedContext);
     async function Prihvati() {
 
         await axios.patch(`/donacije/${donacija.id}`, { kategorija: "donirano" });

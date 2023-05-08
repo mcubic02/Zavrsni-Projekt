@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react"
+
 import Donirano from "./Donirano"
 import Nudim from "./Nudim"
 import Trazim from "./Trazim"
 import '../styles/PopisDonacija.css'
-function PopisDonacija({ donacije, checked, postaviDonacije }) {
+import { useContext } from "react"
+import CheckedContext from "../context/CheckedContext"
 
+function PopisDonacija({ donacije, postaviDonacije }) {
+
+    const {checked, handleChange} = useContext(CheckedContext);
 
     return (
         <div className='popisDonacija'>

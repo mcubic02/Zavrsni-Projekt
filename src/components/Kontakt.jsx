@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import '../styles/Kontakt.css'
 import axios from 'axios'
+import CheckedContext from '../context/CheckedContext';
 
-function Kontakt({checked}) {
+function Kontakt() {
 
+    const {checked, handleChange} = useContext(CheckedContext);
     const [kontakt, postaviKontakt] = useState([]);
     const [uredivanje, postaviUredivanje] = useState(false);
 

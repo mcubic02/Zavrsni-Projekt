@@ -1,6 +1,10 @@
 import axios from "axios";
+import { useContext } from "react";
+import CheckedContext from "../context/CheckedContext";
 
-function Donirano({donacija, checked, postaviDonacije}) {
+function Donirano({donacija, postaviDonacije}) {
+
+    const {checked, handleChange} = useContext(CheckedContext);
 
     async function Izbrisi() {
         await axios.delete(`/donacije/${donacija.id}`);

@@ -1,11 +1,13 @@
 import axios from "axios"
 import '../styles/Popis.css'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Zivotinja from "../components/Zivotinja";
 import Filter from "../components/Filter";
+import CheckedContext from "../context/CheckedContext";
 
-function Popis({checked, zivotinje, postaviZivotinje}) {
-    
+function Popis({zivotinje, postaviZivotinje}) {
+
+    const {checked, handleChange} = useContext(CheckedContext);
     const [selectedOption1, setSelectedOption1] = useState("svi");
     const [selectedOption2, setSelectedOption2] = useState("sviUdomljeni");
     const [reRender, setReRender] = useState("");

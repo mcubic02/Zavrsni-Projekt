@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import '../styles/Zivotinja.css'
 import axios from 'axios';
+import CheckedContext from '../context/CheckedContext';
 
-function Zivotinja({ zivotinja, checkedd, postaviZivotinje, selectedOption1, selectedOption2 }) {
 
+function Zivotinja({ zivotinja, postaviZivotinje, selectedOption1, selectedOption2 }) {
+
+    const {checked, handleChange} = useContext(CheckedContext);
     const [mijenjamo, postaviMijenjamo] = useState(false);
     const [selectedOption, setSelectedOption] = useState("");
     const [isChecked, setIsChecked] = useState(false);
@@ -92,7 +95,7 @@ function Zivotinja({ zivotinja, checkedd, postaviZivotinje, selectedOption1, sel
     }
 
     useEffect(() => {
-        console.log(checkedd);
+        console.log(checked);
         
         if (zivotinja.udomljen === true)  {
             setUdomljenaZivotinja("udomljen");
@@ -224,8 +227,8 @@ function Zivotinja({ zivotinja, checkedd, postaviZivotinje, selectedOption1, sel
                     <p>{zivotinja.cip || zivotinja.cip === "on" ? "Čipiran" : "Nije Čipiran"}</p>
                     <p>{zivotinja.opis}</p>
                     <p>Pregled: {zivotinja.pregled}</p>
-                    {checkedd ? "":zivotinja.udomljen ? <p className='udomljen' >UDOMLJEN!</p> : <button id='udomljenButton' onClick={udomiZivotinju}>Udomi</button>}
-                    {checkedd ? <button className='zivotinjeButton' onClick={Uredi}>Uredi</button> : ""}
+                    {checked ? "":zivotinja.udomljen ? <p className='udomljen' >UDOMLJEN!</p> : <button id='udomljenButton' onClick={udomiZivotinju}>Udomi</button>}
+                    {checked ? <button className='zivotinjeButton' onClick={Uredi}>Uredi</button> : ""}
                 </div>
             }
         </>

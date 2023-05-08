@@ -1,10 +1,12 @@
 import '../styles/PopisObavijesti.css'
 import {FaTrash} from 'react-icons/fa'
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import CheckedContext from '../context/CheckedContext';
 
-function PopisObavijesti({obavijest, postaviObavijesti, checked}) {
+function PopisObavijesti({obavijest, postaviObavijesti}) {
 
+    const {checked, handleChange} = useContext(CheckedContext);
     const [godina, postaviGodinu]= useState("");
     const [dan, postaviDan]= useState("");
     const [mjesec, postaviMjesec]= useState("");

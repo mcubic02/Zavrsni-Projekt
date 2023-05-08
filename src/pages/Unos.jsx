@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import '../styles/Unos.css'
 import axios from 'axios';
+import CheckedContext from '../context/CheckedContext';
 
-function Unos({ checked, zivotinje, postaviZivotinje}) {
+function Unos({postaviZivotinje}) {
 
+    const {checked, handleChange} = useContext(CheckedContext);
     const [selectedOption, setSelectedOption] = useState("mačka");
     const [isChecked, setIsChecked] = useState(false);
     const [selectedDate, setSelectedDate] = useState("");

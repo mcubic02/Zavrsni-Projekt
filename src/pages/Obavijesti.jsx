@@ -1,10 +1,13 @@
-import { useState, useEffect} from "react"
+import { useState, useEffect, useContext} from "react"
 import ObavijestForma from "../components/ObavijestForma";
 import '../styles/Obavijesti.css'
 import axios from "axios";
 import PopisObavijesti from "../components/PopisObavijesti";
+import CheckedContext from "../context/CheckedContext";
 
-function Obavijesti({checked}) {
+function Obavijesti() {
+
+    const {checked, handleChange} = useContext(CheckedContext);
     const [prikazForme, setPrikazForme] = useState(false);
     const [obavijesti, postaviObavijesti] = useState([]);
 

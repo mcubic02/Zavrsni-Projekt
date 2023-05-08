@@ -1,16 +1,17 @@
 import Kontakt from "../components/Kontakt"
 import Karta from "../components/Karta"
 import KontaktForma from "../components/KontaktForma"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import axios from "axios"
 import '../styles/OpciPodaci.css'
 import OdgovoriForme from "../components/OdgovoriForme"
+import CheckedContext from "../context/CheckedContext"
 
-function OpciPodaci({checked}) {
+function OpciPodaci() {
 
+    const {checked, handleChange} = useContext(CheckedContext);
     const [poruke, postaviPoruke] = useState([]);
 
-    
     useEffect(() => {
         const dohvacanje = async() => 
         {

@@ -1,16 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import '../styles/Donacije.css'
 import axios from 'axios';
 import DonacijeForma from '../components/DonacijeForma';
 import PopisDonacija from '../components/PopisDonacija';
-import Trazim from '../components/Trazim';
-import Nudim from '../components/Nudim';
-import Donirano from '../components/Donirano';
+import CheckedContext from '../context/CheckedContext';
 
-function Donacije({checked}) {
+function Donacije() {
 
-
-
+    const {checked, handleChange} = useContext(CheckedContext);
     const [donacije, postaviDonacije] = useState([]);
     const [showForm, setShowForm] = useState(false);
 

@@ -1,11 +1,12 @@
 import '../styles/ObavijestForma.css'
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import axios from 'axios';
+import CheckedContext from '../context/CheckedContext';
 
-function ObavijestForma({checked, postaviObavijesti, setPrikazForme, refreshPage}) {
+function ObavijestForma({postaviObavijesti, setPrikazForme, refreshPage}) {
 
     const [isChecked, setIsChecked] = useState(false);
-
+    const {checked, handleChange} = useContext(CheckedContext);
     const [formaPodaci, postaviPodatke] = useState({
         naslov: "",
         tekst: "",
