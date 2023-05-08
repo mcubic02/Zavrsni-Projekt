@@ -1,5 +1,5 @@
 .filterBox {
-    font-size: x-large;
+    font-size: 16px;
     width: 235.39px;
     background-color: rgba(143, 132, 132, 0.251);
     height: auto;
@@ -14,7 +14,7 @@
 .filterLabel {
     padding-top: 15px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 18px;
     margin-right: 27px;
     margin-left: 25px;
 }

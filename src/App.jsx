@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 function App() {
 
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(false);
   const handleChange = val => {
     setChecked(val)
   }

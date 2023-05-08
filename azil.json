@@ -2,7 +2,7 @@
   "kontakt": {
     "ime": "Azil za životinje Šapa",
     "adresa": "Domovinskog rata 48, 21312 Podstrana",
-    "broj": "021/123 456",
+    "broj": "021/123 457",
     "mail": "azil.zazivotinje@gmail.com"
   },
   "poruke": [
@@ -21,23 +21,49 @@
       "poruke": "Koje životinje mogu udomiti?",
       "datum": "2023-05-08T15:47:03.067Z",
       "id": 3
+    },
+    {
+      "ime": "Ivana",
+      "prezime": "Ćubić",
+      "mail": "ivanacubic@gmail.com",
+      "poruke": "Želim udomiti papigu!",
+      "datum": "2023-05-08T18:06:26.754Z",
+      "id": 4
+    },
+    {
+      "ime": "uvanaa",
+      "prezime": "asfacyx",
+      "mail": "feadcx{@arwdgsc",
+      "poruke": "da",
+      "datum": "2023-05-08T18:09:09.741Z",
+      "id": 5
+    },
+    {
+      "ime": "defrg",
+      "prezime": "dsf",
+      "mail": "adsf@d",
+      "poruke": "defs",
+      "datum": "2023-05-08T18:12:24.366Z",
+      "id": 6
+    },
+    {
+      "ime": "ej",
+      "prezime": "ee",
+      "mail": "ejjve@e",
+      "poruke": "dd",
+      "datum": "2023-05-08T18:32:23.187Z",
+      "id": 7
+    },
+    {
+      "ime": "Petar",
+      "prezime": "Perić",
+      "mail": "petarperic@gmail.com",
+      "poruke": "Posjedujete li kamelenone??",
+      "datum": "2023-05-08T18:38:12.586Z",
+      "id": 8
     }
   ],
   "obavijesti": [
-    {
-      "naslov": "najnovijaa",
-      "tekst": "naajnovija",
-      "datum": "2023-05-07T23:42:13.636Z",
-      "vazno": false,
-      "id": 12
-    },
-    {
-      "naslov": "najnajnnovija",
-      "tekst": "dd",
-      "datum": "2023-05-07T23:45:01.429Z",
-      "vazno": false,
-      "id": 13
-    },
     {
       "naslov": "Svečano otvorenje",
       "tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
@@ -46,72 +72,25 @@
       "id": 14
     },
     {
-      "naslov": "edc",
-      "tekst": "asdcx",
-      "datum": "2023-05-08T00:17:17.204Z",
+      "naslov": "Svjetski dan pasa",
+      "tekst": "Slavi se 19. listopada.",
+      "datum": "2023-05-08T18:15:02.080Z",
       "vazno": false,
       "id": 15
     },
     {
-      "naslov": "najnovija",
-      "tekst": "ehey",
-      "datum": "2023-05-08T00:21:16.459Z",
-      "vazno": false,
+      "naslov": "Svjetski dan pasa",
+      "tekst": "19. listopada",
+      "datum": "2023-05-08T18:15:48.999Z",
+      "vazno": true,
       "id": 16
     },
     {
-      "naslov": "najnajnjanjnajnajnnovija",
-      "tekst": "naajnovija",
-      "datum": "2023-05-08T00:23:44.181Z",
+      "naslov": "Svjetski dan pasa",
+      "tekst": "19. listopada",
+      "datum": "2023-05-08T18:15:48.999Z",
       "vazno": false,
-      "id": 17
-    },
-    {
-      "naslov": "njanjanjanjan",
-      "tekst": "nadja domo",
-      "datum": "2023-05-08T00:24:40.223Z",
-      "vazno": false,
-      "id": 18
-    },
-    {
-      "naslov": "oce sad",
-      "tekst": "mos mislit",
-      "datum": "2023-05-08T00:32:30.367Z",
-      "vazno": false,
-      "id": 19
-    },
-    {
-      "naslov": "da",
-      "tekst": "da",
-      "datum": "2023-05-08T00:34:52.823Z",
-      "vazno": false,
-      "id": 20
-    },
-    {
-      "datum": "2023-05-08T00:35:52.392Z",
-      "vazno": true,
-      "id": 21
-    },
-    {
-      "naslov": "dada",
-      "tekst": "dada",
-      "datum": "2023-05-08T00:45:01.564Z",
-      "vazno": true,
-      "id": 22
-    },
-    {
-      "naslov": "oce sad",
-      "tekst": "aa",
-      "datum": "2023-05-08T00:47:04.716Z",
-      "vazno": false,
-      "id": 23
-    },
-    {
-      "naslov": "ds",
-      "tekst": "sadf",
-      "datum": "2023-05-08T01:11:21.087Z",
-      "vazno": false,
-      "id": 24
+      "id": 16
     }
   ],
   "donacije": [
@@ -140,7 +119,7 @@
       "tip": "Igračke",
       "vrijednost": 36,
       "opis": "Gumena kost",
-      "kategorija": "trazi",
+      "kategorija": "donirano",
       "id": 7
     },
     {
@@ -156,6 +135,34 @@
       "opis": "Hrana za papige",
       "kategorija": "nudi",
       "id": 10
+    },
+    {
+      "tip": "Lijekovi",
+      "vrijednost": "45",
+      "opis": "Lijek za bjesnoću!",
+      "kategorija": "nudi",
+      "id": 11
+    },
+    {
+      "tip": "Lijekovi",
+      "vrijednost": "5",
+      "opis": "asdfycxed",
+      "kategorija": "donirano",
+      "id": 12
+    },
+    {
+      "tip": "Veterinarski troškovi",
+      "vrijednost": "45",
+      "opis": "Operacija noge.",
+      "kategorija": "donirano",
+      "id": 13
+    },
+    {
+      "tip": "Hrana",
+      "vrijednost": 25,
+      "opis": "Suha hrana za pse - 10kg",
+      "kategorija": "trazi",
+      "id": 14
     }
   ],
   "zivotinje": [

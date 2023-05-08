@@ -204,7 +204,7 @@ function Unos({postaviZivotinje}) {
                                 </div>
                             </div>
                         </div>
-                        <div className="message-box">
+                        <div className="message-box1">
                             <label>
                                 Opis:
                                 <br></br>

@@ -13,6 +13,9 @@ function KontaktForma({postaviPoruke}) {
          mail: "",
          poruke: ""
      });
+    //  const refreshPage = () => {
+    //     window.location.reload();
+    //   };
      function obradiPodatke(objekt) {
         return {
             
@@ -53,6 +56,7 @@ function KontaktForma({postaviPoruke}) {
             poruke: "",
             datum:""
         })
+        // refreshPage();
     };
 
     const promjenaUlaza = (event) => {
@@ -80,6 +84,7 @@ function KontaktForma({postaviPoruke}) {
                 <div className='divIme'>
                     <label>
                         Ime:
+                        <br></br>
                         <input
                             className='ime'
                             type="ime"
@@ -93,6 +98,7 @@ function KontaktForma({postaviPoruke}) {
                 <div>
                     <label>
                         Prezime:
+                        <br></br>
                         <input
                             
                             type="prezime"
@@ -106,6 +112,7 @@ function KontaktForma({postaviPoruke}) {
                 <div>
                     <label>
                         Email:
+                        <br></br>
                         <input
                             className='email'
                             type="email"

@@ -32,6 +32,7 @@
 #novaDonacijaButton {
     border-color: rgb(33, 48, 33);
     border-width: 2px;
+    background-color: var(--backgroundColor);
 }
 
 .donacijaForma .vrijednostDonacije {
@@ -61,4 +62,5 @@
 
 #objaviButton {
     margin-left: 100px;
+    background-color: var(--backgroundColor);
 }

@@ -34,7 +34,7 @@ function PopisObavijesti({obavijest, postaviObavijesti}) {
 
     return(
         <div className='obavijestBox'>
-            <div className='naslovLabel' style={{backgroundColor: obavijest.vazno ? 'rgb(208, 56, 56, 0.50)' : '#d3cece' }}>
+            <div className='naslovLabel' style={{backgroundColor: obavijest.vazno ? 'rgba(63, 138, 63, 0.495)' : 'var(--backgroundColor)' }}>
                 <p className='naslovObavijesti'>{obavijest.naslov}</p>
                 <div className='datumIDelete'>
                 <p className='datumObavijesti'>{dan}.{mjesec}.{godina}</p> 

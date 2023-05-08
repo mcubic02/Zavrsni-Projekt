@@ -9,6 +9,8 @@ function OdgovoriForme ({poruka}){
     const [sat, postaviSat] = useState("");
     const [minute, postaviMinute] = useState("");
 
+   
+
     useEffect(()=>{
     const date = new Date(poruka.datum);
     console.log(date);
@@ -18,6 +20,7 @@ function OdgovoriForme ({poruka}){
     postaviGodinu(date.getFullYear());
     postaviSat(date.getHours());
     postaviMinute(date.getMinutes());
+
     
     },[])
     return(

@@ -12,6 +12,7 @@ function OpciPodaci() {
     const {checked, handleChange} = useContext(CheckedContext);
     const [poruke, postaviPoruke] = useState([]);
 
+    
     useEffect(() => {
         const dohvacanje = async() => 
         {
@@ -45,8 +46,8 @@ function OpciPodaci() {
            ))
            
            : 
-           <KontaktForma postaviPoruke={postaviPoruke}
-           />}
+           <KontaktForma postaviPoruke={postaviPoruke} />
+           }
         </div>
     </div>
     )

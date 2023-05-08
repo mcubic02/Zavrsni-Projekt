@@ -7,10 +7,13 @@
     padding: 10px;
     font-size: larger;
     border-radius: 0.75em;
-    border-color: black;
-    border-style: solid;
+    /* border-color: black;
+    border-style: solid; */
     border-width: 2px;
     background-color: white;
+    color: #213547;
+    padding-left: 15px;
+    padding-right: 15px;
     
   }
   
@@ -31,11 +34,12 @@
   }
   
   .naslovBox{
-    background-color:#d3cece;
+    background-color:rgb(222, 229, 222);
     width: 1525px;
     position: fixed;
     margin-left: -8.5%;
     margin-bottom: 20px;
+    color: #213547
   }
   .naslov{
     display: flex;
