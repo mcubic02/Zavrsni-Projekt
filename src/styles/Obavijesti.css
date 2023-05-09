@@ -7,7 +7,9 @@
     border-bottom-color:rgba(41, 40, 40, 0.582) ;
     border-bottom-width: 3px ;
     border-bottom-style: solid;;
+    width: 1050px;
     margin-bottom: 30px;
+    margin-left: 125px;
 }
 
 .dodavanjeObavijesti .topObavijesti {

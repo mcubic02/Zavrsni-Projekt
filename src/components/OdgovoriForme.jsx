@@ -8,7 +8,7 @@ function OdgovoriForme ({poruka}){
     const [mjesec, postaviMjesec]= useState("");
     const [sat, postaviSat] = useState("");
     const [minute, postaviMinute] = useState("");
-
+    
    
 
     useEffect(()=>{
@@ -19,7 +19,8 @@ function OdgovoriForme ({poruka}){
     console.log(date.getMonth());
     postaviGodinu(date.getFullYear());
     postaviSat(date.getHours());
-    postaviMinute(date.getMinutes());
+    postaviMinute(date.getMinutes().toLocaleString('en-US', { minimumIntegerDigits: 2 })
+    );
 
     
     },[])

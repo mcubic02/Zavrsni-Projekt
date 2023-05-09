@@ -2,7 +2,7 @@
   "kontakt": {
     "ime": "Azil za životinje Šapa",
     "adresa": "Domovinskog rata 48, 21312 Podstrana",
-    "broj": "021/123 457",
+    "broj": "021/123 456",
     "mail": "azil.zazivotinje@gmail.com"
   },
   "poruke": [
@@ -31,34 +31,10 @@
       "id": 4
     },
     {
-      "ime": "uvanaa",
-      "prezime": "asfacyx",
-      "mail": "feadcx{@arwdgsc",
-      "poruke": "da",
-      "datum": "2023-05-08T18:09:09.741Z",
-      "id": 5
-    },
-    {
-      "ime": "defrg",
-      "prezime": "dsf",
-      "mail": "adsf@d",
-      "poruke": "defs",
-      "datum": "2023-05-08T18:12:24.366Z",
-      "id": 6
-    },
-    {
-      "ime": "ej",
-      "prezime": "ee",
-      "mail": "ejjve@e",
-      "poruke": "dd",
-      "datum": "2023-05-08T18:32:23.187Z",
-      "id": 7
-    },
-    {
       "ime": "Petar",
       "prezime": "Perić",
       "mail": "petarperic@gmail.com",
-      "poruke": "Posjedujete li kamelenone??",
+      "poruke": "Koje je Vaše radno vrijeme??",
       "datum": "2023-05-08T18:38:12.586Z",
       "id": 8
     }
@@ -67,30 +43,37 @@
     {
       "naslov": "Svečano otvorenje",
       "tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
-      "datum": "2023-05-07T23:47:10.057Z",
-      "vazno": false,
+      "datum": "2022-11-08T23:47:10.057Z",
+      "vazno": true,
       "id": 14
     },
     {
       "naslov": "Svjetski dan pasa",
-      "tekst": "Slavi se 19. listopada.",
-      "datum": "2023-05-08T18:15:02.080Z",
+      "tekst": "19. listopada",
+      "datum": "2023-01-08T18:15:48.999Z",
       "vazno": false,
-      "id": 15
+      "id": 16
     },
     {
-      "naslov": "Svjetski dan pasa",
-      "tekst": "19. listopada",
-      "datum": "2023-05-08T18:15:48.999Z",
+      "naslov": "Svjetski dan mački",
+      "tekst": "Slavi se 8. listopada.",
+      "datum": "2023-03-09T01:15:54.787Z",
+      "vazno": false,
+      "id": 17
+    },
+    {
+      "naslov": "Dan našeg azila",
+      "tekst": "Dan našeg azila slavi se 12.5.2023.",
+      "datum": "2023-05-09T01:16:46.394Z",
       "vazno": true,
-      "id": 16
+      "id": 18
     },
     {
-      "naslov": "Svjetski dan pasa",
-      "tekst": "19. listopada",
-      "datum": "2023-05-08T18:15:48.999Z",
+      "naslov": "Novo u našem azilu!",
+      "tekst": "Od danas u našem azilu možete kupovati i hranu za životinje.",
+      "datum": "2023-05-10T01:17:22.493Z",
       "vazno": false,
-      "id": 16
+      "id": 19
     }
   ],
   "donacije": [
@@ -144,137 +127,80 @@
       "id": 11
     },
     {
-      "tip": "Lijekovi",
-      "vrijednost": "5",
-      "opis": "asdfycxed",
-      "kategorija": "donirano",
-      "id": 12
-    },
-    {
-      "tip": "Veterinarski troškovi",
-      "vrijednost": "45",
-      "opis": "Operacija noge.",
-      "kategorija": "donirano",
-      "id": 13
-    },
-    {
       "tip": "Hrana",
       "vrijednost": 25,
       "opis": "Suha hrana za pse - 10kg",
       "kategorija": "trazi",
       "id": 14
+    },
+    {
+      "tip": "Lijekovi",
+      "vrijednost": "40",
+      "opis": "Lijek za kašalj",
+      "kategorija": "trazi",
+      "id": 15
     }
   ],
   "zivotinje": [
     {
       "ime": "Garfield",
       "vrsta": "mačka",
-      "cip": "on",
+      "cip": "neCipiran",
       "godine": "44",
       "opis": "Voli lazanje",
       "pregled": "2023-05-16",
-      "udomljen": true,
+      "udomljen": "udomljen",
       "id": 1
     },
     {
       "ime": "Snoop",
       "vrsta": "pas",
-      "cip": "false",
+      "cip": "cipiran",
       "godine": 50,
       "opis": "On nije kao ostali psi",
-      "pregled": "2022-09-23",
-      "udomljen": "true",
+      "pregled": "2022-09-07",
+      "udomljen": "neUdomljen",
       "id": 2
     },
     {
       "ime": "Snoopy",
       "vrsta": "pas",
-      "cip": false,
+      "cip": "neCipiran",
       "godine": 50,
       "opis": "On nije kao ostali psi",
       "pregled": "2022-09-23",
-      "udomljen": true,
+      "udomljen": "udomljen",
       "id": 3
     },
     {
-      "ime": "Snoopy",
+      "ime": "Rikii",
       "vrsta": "pas",
-      "cip": "false",
-      "godine": 50,
-      "opis": "On nije kao ostali psi",
-      "pregled": "2022-09-23",
-      "udomljen": true,
-      "id": 4
-    },
-    {
-      "ime": "Riki",
-      "vrsta": "pas",
-      "cip": true,
+      "cip": "neCipiran",
       "godine": "14",
-      "opis": "",
+      "opis": "Voli lazanje",
       "pregled": "2023-05-04",
-      "udomljen": false,
+      "udomljen": "udomljen",
       "id": 17
-    },
-    {
-      "ime": "Garfield",
-      "vrsta": "mačka",
-      "cip": true,
-      "godine": "44",
-      "opis": "",
-      "pregled": "2023-06-03",
-      "udomljen": true,
-      "id": 18
-    },
-    {
-      "ime": "ysd",
-      "vrsta": "mačka",
-      "cip": false,
-      "godine": "558",
-      "opis": "ej",
-      "pregled": "2023-05-19",
-      "udomljen": false,
-      "id": 19
     },
     {
       "ime": "Toto",
       "vrsta": "pas",
-      "cip": true,
+      "cip": "cipiran",
       "godine": "4",
       "opis": "Voli trčat!",
       "pregled": "2023-05-01",
-      "udomljen": true,
+      "udomljen": "udomljen",
       "id": 20
     },
     {
-      "ime": "ghj",
-      "vrsta": "mačka",
-      "cip": false,
-      "godine": "6",
-      "opis": "ghj",
-      "pregled": "2023-05-05",
-      "udomljen": false,
-      "id": 21
-    },
-    {
-      "ime": "hj",
-      "vrsta": "mačka",
-      "cip": false,
-      "godine": "6",
-      "opis": "vbn",
-      "pregled": "2023-05-12",
-      "udomljen": true,
-      "id": 22
-    },
-    {
-      "ime": "fasdsf",
-      "vrsta": "ostalo",
-      "cip": false,
-      "godine": "56",
-      "opis": "",
-      "pregled": "2023-05-17",
-      "udomljen": true,
-      "id": 23
+      "ime": "Rex",
+      "vrsta": "pas",
+      "cip": "cipiran",
+      "godine": "4",
+      "opis": "Njemački ovčar.",
+      "pregled": "2023-05-03",
+      "udomljen": "neUdomljen",
+      "id": 24
     }
   ],
   "tipDonacije": [

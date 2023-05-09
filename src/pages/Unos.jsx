@@ -3,9 +3,9 @@ import '../styles/Unos.css'
 import axios from 'axios';
 import CheckedContext from '../context/CheckedContext';
 
-function Unos({postaviZivotinje}) {
+function Unos({ postaviZivotinje }) {
 
-    const {checked, handleChange} = useContext(CheckedContext);
+    const { checked, handleChange } = useContext(CheckedContext);
     const [selectedOption, setSelectedOption] = useState("mačka");
     const [isChecked, setIsChecked] = useState(false);
     const [selectedDate, setSelectedDate] = useState("");
@@ -17,19 +17,11 @@ function Unos({postaviZivotinje}) {
         godine: "",
         opis: "",
         pregled: "",
-        udomljen:""
+        udomljen: "neUdomljen"
     });
 
-    const unesiZivotinju = async(event) => {
+    const unesiZivotinju = async (event) => {
         event.preventDefault();
-        const messageInput = document.getElementById('message-input1');
-        formaPodaci.opis = messageInput.value;
-        messageInput.value = "";
-        formaPodaci.vrsta = selectedOption;
-        formaPodaci.cip = isChecked;
-        formaPodaci.pregled = selectedDate;
-        formaPodaci.udomljen = false;
-
         const zaSlanje = obradiPodatke(formaPodaci);
         await axios.post(`/zivotinje`, zaSlanje);
         const rezultat = await axios.get("/zivotinje");
@@ -42,28 +34,39 @@ function Unos({postaviZivotinje}) {
                 godine: "",
                 opis: "",
                 pregled: "",
-                udomljen:""
+                udomljen: ""
             }
         )
     }
 
     function handleCheckboxChange(event) {
-        if(isChecked)
+        if (isChecked){
             setIsChecked(false);
+            formaPodaci.cip = "neCipiran"
+        }
         else
+        {
             setIsChecked(true);
+            formaPodaci.cip = "cipiran"
+        }
+    
     }
 
     const handleDateChange = (event) => {
         setSelectedDate(event.target.value);
+        promjenaUlaza(event);
     }
 
     const handleOptionClick = (event) => {
         setSelectedOption(event.target.value);
+        console.log(event.target.value);
+        promjenaUlaza(event);
     }
 
     const promjenaUlaza = (event) => {
         const { name, value } = event.target;
+        console.log(name);
+        console.log(value);
 
         postaviPodatke({ ...formaPodaci, [name]: value });
     }
@@ -71,26 +74,26 @@ function Unos({postaviZivotinje}) {
 
     function obradiPodatke(objekt) {
         return {
-                ime: objekt.ime,
-                vrsta: objekt.vrsta,
-                cip: objekt.cip,
-                godine: objekt.godine,
-                opis: objekt.opis,
-                pregled: objekt.pregled,
-                udomljen: false
-        
+            ime: objekt.ime,
+            vrsta: objekt.vrsta,
+            cip: objekt.cip,
+            godine: objekt.godine,
+            opis: objekt.opis,
+            pregled: objekt.pregled,
+            udomljen: "neUdomljen"
+
         };
     }
     function handleNumberChange(event) {
         promjenaUlaza(event);
         const godine = event.target.value
         if (godine >= 0) {
-          setWarning('');
+            setWarning('');
         } else {
 
-          setWarning('Dob ne može biti negativan broj');
+            setWarning('Dob ne može biti negativan broj');
         }
-      }
+    }
 
     if (!checked)
         return (
@@ -110,6 +113,7 @@ function Unos({postaviZivotinje}) {
                                 <div className='divIme'>
                                     <label>
                                         Ime:
+                                        <br></br>
                                         <input
                                             className='ime'
                                             type="ime"
@@ -123,6 +127,7 @@ function Unos({postaviZivotinje}) {
                                 <div>
                                     <label >
                                         Dob:
+                                        <br></br>
                                         <input
                                             className='dobLabel'
                                             type="number"
@@ -131,9 +136,48 @@ function Unos({postaviZivotinje}) {
                                             onChange={handleNumberChange}
                                             required
                                         />
-                                            {warning && <p className='warning'>{warning}</p>}
+                                        {warning && <p className='warning'>{warning}</p>}
 
-                                         
+
+                                    </label>
+                                </div>
+                                <div className="message-box1">
+                                    <label>
+                                        Opis:
+                                        <br></br>
+                                        <textarea id="message-input1" placeholder="Upisite opis" name='opis' value={formaPodaci.opis} onChange={promjenaUlaza}></textarea>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div className='right'>
+                                <div className='pregledDiv'>
+                                    <label className='pregledLabel'>
+                                        Datum zadnjeg pregleda:
+                                        <br></br>
+                                        <input
+                                            id='pregled'
+                                            type="date"
+                                            name="pregled"
+                                            value={selectedDate}
+                                            onChange={handleDateChange}
+                                            required
+                                        />
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label className='checkboxLabel'>
+                                        <input
+                                            id='checkbox'
+                                            type="checkbox"
+                                            name="cip"
+                                            checked={isChecked}
+                                            onChange={handleCheckboxChange}
+
+                                        />
+                                        Čipiran
                                     </label>
                                 </div>
                                 <div className='options'>
@@ -145,73 +189,43 @@ function Unos({postaviZivotinje}) {
                                             className='radio'
                                             type="radio"
                                             value="pas"
+                                            name='vrsta'
                                             checked={selectedOption === 'pas'}
                                             onChange={handleOptionClick}
                                         />
                                         Pas
                                     </label>
+                                    <br></br>
                                     <label>
 
                                         <input
                                             className='radio'
                                             type="radio"
                                             value="mačka"
+                                            name='vrsta'
                                             checked={selectedOption === 'mačka'}
                                             onChange={handleOptionClick}
                                         />
                                         Mačka
                                     </label>
+                                    <br></br>
                                     <label className='radioLabel'>
 
                                         <input
                                             className='radio'
                                             type="radio"
                                             value="ostalo"
+                                            name='vrsta'
                                             checked={selectedOption === 'ostalo'}
                                             onChange={handleOptionClick}
                                         />
                                         Ostalo
                                     </label>
                                 </div>
-                            </div>
-                            <div className='right'>
-                                <div>
-                                    <label className='checkboxLabel'>
-                                        <input
-                                            className='checkbox'
-                                            type="checkbox"
-                                            name="prezime"
-                                            checked = {isChecked}
-                                            onChange={handleCheckboxChange}
-                                            
-                                        />
-                                        Čipiran
-                                    </label>
-                                </div>
-                                <div>
-                                    <label className='pregledLabel'>
-                                        Datum zadnjeg pregleda:
-                                        <input
-                                            id='pregled'
-                                            type="date"
-                                            name="prezime"
-                                            value = {selectedDate}
-                                            onChange={handleDateChange}
-                                            required
-                                        />
-                                        
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="message-box1">
-                            <label>
-                                Opis:
-                                <br></br>
-                                <textarea id="message-input1" placeholder="Upisite opis"></textarea>
-                            </label>
 
+                            </div>
                         </div>
+
 
                         <button id="submitButton" type="submit" >Unesi životinju</button>
 

@@ -12,6 +12,9 @@ function OpciPodaci() {
     const {checked, handleChange} = useContext(CheckedContext);
     const [poruke, postaviPoruke] = useState([]);
 
+    const refreshPage = () => {
+        window.location.reload();
+      };
     
     useEffect(() => {
         const dohvacanje = async() => 
@@ -46,7 +49,7 @@ function OpciPodaci() {
            ))
            
            : 
-           <KontaktForma postaviPoruke={postaviPoruke} />
+           <KontaktForma postaviPoruke={postaviPoruke} refreshPage={refreshPage}/>
            }
         </div>
     </div>

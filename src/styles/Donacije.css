@@ -64,3 +64,9 @@
     margin-left: 100px;
     background-color: var(--backgroundColor);
 }
+
+.warning1 {
+    color: brown;
+    font-size: 14px;
+    padding-left: 20px;
+}

@@ -11,43 +11,44 @@
 }
 
 #pregled {
-    margin-left: 10px;
+    margin-left: 55px;
 }
 
 
 
 .unosForma {
-    border-radius: 1.5em;
+    border-radius: 0.5em;
     height: auto;
-    width: 1000px;
-    border-color: rgb(33, 48, 33);
-    border-style: solid;
-    background-color: rgba(143, 132, 132, 0.396);
+    width: 800px;
+    background-color: var(--backgroundColor);
     margin-top: 30px;
     padding-top: 10px;
     text-align: left;
     padding-bottom: 20px;
-    margin-left: 150px;
+    margin-left: 200px;
     margin-right: 130px;
     margin-bottom: 30px;
+    padding-left: 50px;
+}
+#checkbox {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
 }
 
 .unosForma input {
     width: 200px;
     margin-left: 55px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
-.checkbox {
-    margin-right: -80px;
-    width: 15px;
-    height: 15px;
-}
+
 
 .checkboxLabel {
-    margin-right: 250px;
     font-size: medium;
 }
+
+
 
 .unosForma label {
     margin-left: 50px;
@@ -56,8 +57,9 @@
 
 .unosForma .ime {
     width: 200px;
-    margin-left: 58px;
-    margin-top: 50px;
+    margin-left: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .unosForma .email {
@@ -67,20 +69,20 @@
 }
 
 #message-input1 {
-    margin-left: 138px;
-    margin-top: -17px;
-    width: 400px;
+    margin-left: 55px;
+    margin-top: 10px;
+    width: 300px;
     height: 150px;
     resize: none;
 }
 
 .message-box1 {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 
 #submitButton {
-    margin-left: 429px;
+    margin-left: 300px;
     margin-top: 20px;
 
 }
@@ -104,18 +106,29 @@
 
 
 .optionVrsta {
-    margin-left: 50px;
-    margin-top: 40px;
-    margin-bottom: -40px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 
 input.radio {
     width: 15px;
     margin-right: 5px;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 .warning {
-    margin-left: 120px;
-    color: rgb(171, 30, 30);
+    font-size: 14px;
+    margin-left: 56px;
+    color: brown;
+}
+
+.pregledDiv {
+    margin-bottom: 40px;
+    
+}
+
+.flexForma .right {
+    padding-right: 140px;
+    padding-left: 100px;
 }

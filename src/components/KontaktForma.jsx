@@ -4,7 +4,7 @@ import axios from 'axios';
 
 axios.defaults.baseURL = "http://localhost:3000";
 
-function KontaktForma({postaviPoruke}) {
+function KontaktForma({postaviPoruke, refreshPage}) {
 
     const [showMessage, setShowMessage] = useState(false);
     const [formaPodaci, postaviPodatke] = useState({
@@ -42,11 +42,12 @@ function KontaktForma({postaviPoruke}) {
 
       
         postaviPoruke(rezultat.data);
-
+        refreshPage();
         setShowMessage(true);
+
     setTimeout(() => {
       setShowMessage(false);
-    }, 5000);
+    }, 50000);
 
         postaviPodatke(
             {
@@ -56,7 +57,7 @@ function KontaktForma({postaviPoruke}) {
             poruke: "",
             datum:""
         })
-        // refreshPage();
+        
     };
 
     const promjenaUlaza = (event) => {

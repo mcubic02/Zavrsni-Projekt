@@ -30,7 +30,7 @@ function DonacijeForma({postaviDonacije, setShowForm}) {
           setWarning('');
         } else {
 
-          setWarning('Dob ne može biti negativan broj');
+          setWarning('Vrijednost ne može biti negativan broj');
         }
       }
 
@@ -122,7 +122,7 @@ function DonacijeForma({postaviDonacije, setShowForm}) {
                     
                 </label>
             </p>
-            {warning && <p className='warning'>{warning}</p>}
+            {warning && <p className='warning1'>{warning}</p>}
             <p className='opisDonacije'>
                 <label>
                     Opis:

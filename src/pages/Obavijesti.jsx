@@ -14,9 +14,6 @@ function Obavijesti() {
     const refreshPage = () => {
         window.location.reload();
       };
-      
-
-
     useEffect(() => {
         const dohvacanje = async() => 
         {
