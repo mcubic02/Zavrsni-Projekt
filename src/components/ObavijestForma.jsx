@@ -68,6 +68,7 @@ function ObavijestForma({postaviObavijesti, setPrikazForme, refreshPage}) {
                         value={formaPodaci.naslov}
                         onChange={promjenaUlaza}
                         required
+                        maxLength={20}
                     >
                     </input>
                 </label>
@@ -75,7 +76,7 @@ function ObavijestForma({postaviObavijesti, setPrikazForme, refreshPage}) {
                     <label>
                         Tekst:
                         <br></br>
-                        <textarea id="message-input2" placeholder="Type your message here" name='tekst' value={formaPodaci.tekst} onChange={promjenaUlaza}></textarea>
+                        <textarea id="message-input2" placeholder="Type your message here" name='tekst' value={formaPodaci.tekst} onChange={promjenaUlaza} minLength={10} maxLength={200}></textarea>
                     </label>
                 </div>
                 {checked ? 
